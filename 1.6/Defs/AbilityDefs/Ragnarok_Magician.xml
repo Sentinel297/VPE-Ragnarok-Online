@@ -116,14 +116,14 @@
 	<description>Strike an enemy with 10 bolts of frigid ice.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Cold_Bolt</iconPath>
 	<castTime>30</castTime>
-	<targetMode>Pawn</targetMode>
+	<targetMode>Location</targetMode>
 	<targetingParameters>
-		<canTargetLocations>false</canTargetLocations>
-		<canTargetSelf>true</canTargetSelf>
-		<canTargetAnimals>true</canTargetAnimals>
-		<canTargetPawns>true</canTargetPawns>
-		<canTargetHumans>true</canTargetHumans>
-		<canTargetMechs>true</canTargetMechs>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
 	</targetingParameters>
 	<!-- <chance>0</chance> -->
 	<range>15.9</range>
@@ -145,6 +145,31 @@
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
+
+<ThingDef>
+	<defName>VPE_Ragnarok_Magician_LightningBoltSpawnerSTNL</defName>
+	<label>Charge Anomaly</label>
+	<thingClass>VPE_Ragnarok.LightningBoltSpawner</thingClass>
+	<category>Gas</category>
+	<altitudeLayer>Gas</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		<drawSize>1.5</drawSize>
+		<color>(1, 1, 1, 1)</color>
+	</graphicData>
+	<comps>
+		<!-- <li Class="CompProperties_DestroyAfterDelay"> -->
+			<!-- <delayTicks>840</delayTicks> -->
+		<!-- </li> -->
+		<!-- <li Class="CompProperties_Effecter"> -->
+			<!-- <effecterDef>VPE_Magician_FirewallSTNL</effecterDef> -->
+		<!-- </li> -->
+	</comps>
+</ThingDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_SightSTNL</defName>
@@ -458,24 +483,20 @@
 
 <!-- Fire wall thing -->
 
-  <ThingDef Name="VPE_RagnarokFireWallSTNL" Abstract="True">
-    <thingClass>VPE_Ragnarok.FireWallMage</thingClass>
-    <label>Fire Wall</label>
-    <category>Gas</category>
-    <altitudeLayer>Gas</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <tickerType>Normal</tickerType>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>Transparent</shaderType>
-    </graphicData>
-  </ThingDef>
 
-<ThingDef ParentName="VPE_RagnarokFireWallSTNL">
+
+<ThingDef>
 	<defName>VPE_Ragnarok_Magician_FireWallSTNL</defName>
 	<label>Fire Wall</label>
+	<thingClass>VPE_Ragnarok.FireWallMage</thingClass>
+	<category>Gas</category>
+	<altitudeLayer>Gas</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
 	<graphicData>
 		<texPath>UI_RagnarokSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
 		<drawSize>1.5</drawSize>
 		<color>(1, 1, 1, 1)</color>
 	</graphicData>

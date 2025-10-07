@@ -284,7 +284,7 @@
 	<defName>VPE_Ragnarok_Magician_FrostdiverSTNL</defName>
 	<label>Frozen</label>
 	<description>This person has been frozen, they will be unable to move and will have reduced armor efficiency.</description>
-	<hediffClass>HediffWithComps</hediffClass>
+	<hediffClass>VPE_Ragnarok.Hediff_Frozen</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
 	<maxSeverity>1</maxSeverity>

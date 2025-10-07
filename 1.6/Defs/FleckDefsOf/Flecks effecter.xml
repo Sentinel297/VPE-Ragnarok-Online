@@ -1,6 +1,135 @@
 <Defs>
-  
-  <!-- Sustained Around Pawn -->
-  
 
+<ThingDef ParentName="SkyfallerBase">
+    <defName>VPE_Ragna_FireballIncomingSTNL</defName>
+    <label>Fire ball</label>
+    <graphicData>
+      <texPath>UI_RagnarokSTNL/Flecks/Magician/SkyfallerFlameBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <!-- <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow> -->
+      <!-- <shadowSize>(2, 2)</shadowSize> -->
+      <ticksToImpactRange>30~60</ticksToImpactRange>
+      <!-- <anticipationSound>WarpedObelisk_Fall</anticipationSound> -->
+      <!-- <anticipationSoundTicks>780</anticipationSoundTicks> -->
+      <impactSound>Explosion_Flame</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <explosionRadius>1</explosionRadius>
+      <explosionDamage>Flame</explosionDamage>
+    </skyfaller>
+  </ThingDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_Ragna_Magician_FirewallSTNL</defName>
+    <graphicData>
+      <texPath>Things/Mote/FireGlow</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(1, 1, 1, 115)</color>
+	  <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>3.2</fadeOutTime>
+    <growthRate>0.005</growthRate>
+  </FleckDef>
+  
+    <EffecterDef>
+    <defName>VPE_Magician_FirewallSTNL</defName>
+    <children>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>VPE_Ragna_Magician_FirewallSTNL</fleckDef>
+		<positionRadius>0</positionRadius>
+        <ticksBetweenMotes>0</ticksBetweenMotes>
+		<positionOffset>(0, 0, 0)</positionOffset>
+        <scale>1~1.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~70</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <!-- Safety Wall -->
+  
+  <!-- <FleckDef ParentName="FleckBase_Thrown"> -->
+    <!-- <defName>VPE_Ragna_Magician_SafetywallSTNL</defName> -->
+    <!-- <graphicData> -->
+		<!-- <texPath>Things/Mote/LightningGlow</texPath> -->
+		<!-- <shaderType>MoteGlow</shaderType> -->
+      <!-- <renderInstanced>true</renderInstanced> -->
+      <!-- <color>(255, 162, 198, 25)</color> -->
+	  <!-- <drawSize>(1, 1)</drawSize> -->
+    <!-- </graphicData> -->
+    <!-- <altitudeLayer>MoteLow</altitudeLayer> -->
+    <!-- <fadeInTime>0.50</fadeInTime> -->
+    <!-- <solidTime>2.5</solidTime> -->
+    <!-- <fadeOutTime>3.2</fadeOutTime> -->
+    <!-- <growthRate>0.005</growthRate> -->
+  <!-- </FleckDef> -->
+  
+  
+<!-- <EffecterDef> -->
+	<!-- <defName>VPE_Magician_SafetywallSTNL</defName> -->
+	<!-- <children> -->
+		<!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass> -->
+			<!-- <fleckDef>VPE_Ragna_Magician_SafetywallSTNL</fleckDef> -->
+			<!-- <positionRadius>0</positionRadius> -->
+			<!-- <ticksBetweenMotes>1</ticksBetweenMotes> -->
+			<!-- <positionOffset>(0, 0, -0.3)</positionOffset> -->
+			<!-- <scale>1~1.5</scale> -->
+			<!-- <spawnLocType>OnSource</spawnLocType> -->
+			<!-- <absoluteAngle>true</absoluteAngle> -->
+			<!-- <scale>2.5</scale> -->
+			<!-- <angle>0</angle> -->
+			<!-- <speed>0.2~0.35</speed> -->
+		<!-- </li> -->
+
+	<!-- </children> -->
+<!-- </EffecterDef> -->
+  
+  
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Magician_SafetywallTwoSTNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/Apparition</texPath>
+		<shaderType>MoteGlow</shaderType>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 25)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>MoteLow</altitudeLayer>
+	<fadeInTime>0.50</fadeInTime>
+	<solidTime>2.5</solidTime>
+	<fadeOutTime>3.2</fadeOutTime>
+	<growthRate>0.005</growthRate>
+</FleckDef>
+  
+  
+<EffecterDef>
+	<defName>VPE_Magician_SafetywallSTNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<fleckDef>VPE_Ragna_Magician_SafetywallTwoSTNL</fleckDef>
+			<positionRadiusMin>0</positionRadiusMin>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>0</ticksBetweenMotes>
+			<positionOffset>(0, 0, -0.3)</positionOffset>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>true</absoluteAngle>
+			<scale>1.5</scale>
+			<angle>0~0</angle>
+			<speed>0.2~0.35</speed>
+		</li>
+	</children>
+</EffecterDef>
 </Defs>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Level 1 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_FrostDiverSTNL</defName>
+	<label>Frost Diver</label>
+	<description>Inflicts frostbite damage and has a 65% chance to freeze the target for 20 seconds.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_FrostDiver</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>26</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_NapalmBeatSTNL</defName>
+	<label>Napalm Beat</label>
+	<description>Strike multiple enemies with psychokinetic energy to inflict psychic damage to all enemies within the area of effect, every target in the AoE will take equal damage.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>2.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Napalm</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>18</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_ThunderstormSTNL</defName>
+	<label>Thunder Storm</label>
+	<description>Call forth bolts of lightning to strike every cell within the target area.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+	<castTime>90</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>4.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Thunderstorm</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>3</order>
+			<psyfocusCost>0.15</psyfocusCost>
+			<entropyGain>74</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 2 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_ColdBoltSTNL</defName>
+	<label>Cold Bolt</label>
+	<description>Call forth a bolt of lightning from the skies to strike at the target location.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Thunderbolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>18</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_LightningBoltSTNL</defName>
+	<label>Lightning Bolt</label>
+	<description>Call forth a bolt of lightning from the skies to strike at the target location.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Thunderbolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>18</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+</Defs>

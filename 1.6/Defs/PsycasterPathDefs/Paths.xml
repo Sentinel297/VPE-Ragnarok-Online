@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Swordsman -->
+
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+		<defName>VPE_RagnarokSwordsmanSTNL</defName>
+		<label>Swordsman</label>
+		<description>.</description>
+		<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
+		<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+		<tab>Misc</tab>
+		<tooltip>.</tooltip>
+	</VanillaPsycastsExpanded.PsycasterPathDef>
+	
+		<VanillaPsycastsExpanded.PsycasterPathDef>
+		<defName>VPE_RagnarokMagicianSTNL</defName>
+		<label>Magician</label>
+		<description>.</description>
+		<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
+		<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+		<tab>Misc</tab>
+		<tooltip>.</tooltip>
+	</VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

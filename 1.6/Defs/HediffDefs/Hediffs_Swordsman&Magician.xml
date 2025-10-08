@@ -21,7 +21,8 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<comps>
+	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 			<!-- <li Class="HediffCompProperties_Disappears"> -->
 				<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 				<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -51,7 +52,8 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<comps>
+	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 			<!-- <li Class="HediffCompProperties_Disappears"> -->
 				<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 				<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -86,6 +88,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>12500</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>
@@ -117,6 +120,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>2220</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>
@@ -144,6 +148,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
 			<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 			<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -178,6 +183,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
 			<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 			<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -214,6 +220,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
 		<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 		<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -244,6 +251,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
 		<!-- <disappearsAfterTicks>12500</disappearsAfterTicks> -->
 		<!-- <showRemainingTime>true</showRemainingTime> -->
@@ -271,6 +279,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 		<disappearsAfterTicks>600</disappearsAfterTicks>
 		<showRemainingTime>true</showRemainingTime>
@@ -311,6 +320,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>1200</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>
@@ -338,6 +348,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>600</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>
@@ -364,12 +375,13 @@
 		<li>
 		</li>
 	</stages>
-	<!-- <comps> -->
+	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
 			<!-- <disappearsAfterTicks>600</disappearsAfterTicks> -->
 			<!-- <showRemainingTime>true</showRemainingTime> -->
 		<!-- </li> -->
-	<!-- </comps> -->
+	</comps>
 </HediffDef>
 
 <HediffDef>
@@ -403,6 +415,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 	<li Class="HediffCompProperties_Disappears">
 	<disappearsAfterTicks>18000</disappearsAfterTicks>
 	<showRemainingTime>true</showRemainingTime>
@@ -430,6 +443,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>20</disappearsAfterTicks>
 			<showRemainingTime>false</showRemainingTime>
@@ -469,6 +483,7 @@
 		</li>
 	</stages>
 	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>1200</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>

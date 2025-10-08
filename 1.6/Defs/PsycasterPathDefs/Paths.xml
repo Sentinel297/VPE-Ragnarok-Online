@@ -3,23 +3,37 @@
 
 <!-- Swordsman -->
 
-	<VanillaPsycastsExpanded.PsycasterPathDef>
-		<defName>VPE_RagnarokSwordsmanSTNL</defName>
-		<label>Swordsman</label>
-		<description>.</description>
-		<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
-		<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
-		<tab>Misc</tab>
-		<tooltip>.</tooltip>
-	</VanillaPsycastsExpanded.PsycasterPathDef>
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokSwordsmanSTNL</defName>
+	<label>Swordsman</label>
+	<description>.</description>
+	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
+	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<tab>Misc</tab>
+	<tooltip>.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
 	
-		<VanillaPsycastsExpanded.PsycasterPathDef>
-		<defName>VPE_RagnarokMagicianSTNL</defName>
-		<label>Magician</label>
-		<description>.</description>
-		<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
-		<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
-		<tab>Misc</tab>
-		<tooltip>.</tooltip>
-	</VanillaPsycastsExpanded.PsycasterPathDef>
+	<!-- Magician -->
+	
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokMagicianSTNL</defName>
+	<label>Magician</label>
+	<description>.</description>
+	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
+	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<tab>Misc</tab>
+	<tooltip>.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<!-- Acolyte -->
+	
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokAcolyteSTNL</defName>
+	<label>Acolyte</label>
+	<description>.</description>
+	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
+	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<tab>Misc</tab>
+	<tooltip>.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
 </Defs>

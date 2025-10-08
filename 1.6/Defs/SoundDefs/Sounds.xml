@@ -1,0 +1,222 @@
+<Defs>
+<SoundDef>
+	<defName>VPE_Acolyte_Heal_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Heal_heal_effect</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+	
+<SoundDef>
+	<defName>VPE_Acolyte_Cure_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Cure_acolyte_cure</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+	
+<SoundDef>
+	<defName>VPE_Acolyte_Aqua_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Aqua_Benedicta_ef_aqua</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Signum_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Signum_Crucis_ef_signum</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Ruwach_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Ruwach_ef_ruwach</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Teleport_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Teleport_ef_teleportation</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Portal_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Warp_Portal_ef_portal</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Pneuma_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Pneuma_st_gas_pushhh</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_HolyLight_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Holy_Light_ab_judex</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_IncreaseAgi_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Increase_AGI_ef_incagility</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_DecreaseAgi_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Decrease_AGI_ef_decagility</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Blessing_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Blessing_ef_blessing</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Acolyte_Angelus_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Acolyte/Angelus_ef_angel</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+</Defs>

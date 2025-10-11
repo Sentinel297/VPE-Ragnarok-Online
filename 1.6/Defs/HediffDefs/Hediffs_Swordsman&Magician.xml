@@ -262,7 +262,7 @@
 <HediffDef>
 	<defName>VPE_Ragnarok_Swordsman_MagnumBreakSTNL</defName>
 	<label>Magnum Break</label>
-	<description>This person will cause a fiery explosion onto anything they target.</description>
+	<description>This person will cause a fiery explosion onto anything they hit.</description>
 	<hediffClass>VPE_Ragnarok.Hediff_MagnumBreak</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -456,7 +456,7 @@
 	<defName>VPE_Ragnarok_Magician_StoneCurseSTNL</defName>
 	<label>Stone Curse</label>
 	<description>This person has been petrified, they will be unable to move and will have reduced armor efficiency.</description>
-	<hediffClass>HediffWithComps</hediffClass>
+	<hediffClass>VPE_Ragnarok.Hediff_Petrified</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
 	<maxSeverity>1</maxSeverity>

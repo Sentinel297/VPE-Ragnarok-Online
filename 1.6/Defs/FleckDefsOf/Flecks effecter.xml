@@ -7,7 +7,7 @@
       <texPath>UI_RagnarokSTNL/Flecks/Magician/SkyfallerFlameBolt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>
-      <drawSize>(1, 1)</drawSize>
+      <drawSize>(2, 2)</drawSize>
     </graphicData>
     <skyfaller>
       <movementType>ConstantSpeed</movementType>
@@ -154,171 +154,22 @@
 	</children>
 </EffecterDef>
 
-<!-- Acolyte -->
+<!-- Abilities -->
 
-          <!-- <drawOffset>(0, 0, 0.1)</drawOffset> -->
-		  
-<FleckDef ParentName="FleckBase_Thrown">
-	<defName>VPE_Ragna_Acolyte_PneumaSTNL</defName>
-	<graphicData>
-		<texPath>Things/Mote/LightningGlow</texPath>
-		<shaderType>MoteGlow</shaderType>
-		<renderInstanced>true</renderInstanced>
-		<color>(0, 255, 0, 150)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Building</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>2.5</solidTime>
-	<fadeOutTime>3.2</fadeOutTime>
-	<growthRate>0.005</growthRate>
-</FleckDef>
-
-
-<EffecterDef>
-	<defName>VPE_Acolyte_PneumaSTNL</defName>
-	<children>
-		<li>
-			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
-			<fleckDef>VPE_Ragna_Acolyte_PneumaSTNL</fleckDef>
-			<positionRadius>0</positionRadius>
-			<ticksBetweenMotes>1</ticksBetweenMotes>
-			<positionOffset>(0, 0, -0.3)</positionOffset>
-			<scale>1~1.5</scale>
-			<spawnLocType>OnSource</spawnLocType>
-			<absoluteAngle>true</absoluteAngle>
-			<scale>2.5</scale>
-			<angle>0</angle>
-			<speed>0.2~0.35</speed>
-		</li>
-	</children>
-</EffecterDef>
-
-
-<!-- Abilities Effect -->
-
-  <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_AgiUpSTNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Increase_AGI_agi_up</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
-  
-  <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_AgiDownSTNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Decrease_AGI_slow</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
-  
 
 <FleckDef ParentName="FleckBase_Thrown">
-	<defName>VPE_Ragna_Acolyte_Cure_cureSTNL</defName>
+	<defName>VPE_Ragna_Magician_FrostDiverSTNL</defName>
 	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Cure_cure</texPath>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/Frost_Driver</texPath>
 		<renderInstanced>true</renderInstanced>
 		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
+		<drawSize>(3, 3)</drawSize>
 	</graphicData>
 	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime/>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
+	<fadeInTime>0</fadeInTime>
+	<solidTime>0.5</solidTime>
+	<fadeOutTime>0</fadeOutTime>
+	<growthRate>0</growthRate>
 </FleckDef>
 
-<EffecterDef>
-	<defName>VPE_Acolyte_CureSTNL</defName>
-	<children>
-		<li>
-			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-			<fleckDef>VPE_Ragna_Acolyte_Cure_cureSTNL</fleckDef>
-			<positionRadius>0</positionRadius>
-			<ticksBetweenMotes>0</ticksBetweenMotes>
-			<positionOffset>(0, 0, 1)</positionOffset>
-			<scale>1</scale>
-			<spawnLocType>OnSource</spawnLocType>
-			<absoluteAngle>false</absoluteAngle>
-			<rotation>0</rotation>
-			<angle>0~0</angle>
-			<speed>0.2~0.35</speed>
-		</li>
-	</children>
-</EffecterDef>
-  
-      <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_Angelus_STNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Angelus_</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
-  
-      <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_Blessing_a1_bSTNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Blessing_a1_b</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
-  
-        <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_Sigmun_Crucis_cross1STNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Sigmun_Crucis_cross1</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
-  
-      <FleckDef ParentName="FleckBase_Thrown">
-    <defName>VPE_Ragna_Acolyte_Holy_Light_cross_oldSTNL</defName>
-	<graphicData>
-		<texPath>UI_RagnarokSTNL/Flecks/Acolyte/Holy_Light_cross_old</texPath>
-		<renderInstanced>true</renderInstanced>
-		<color>(255, 255, 255, 255)</color>
-		<drawSize>(1, 1)</drawSize>
-	</graphicData>
-	<altitudeLayer>Darkness</altitudeLayer>
-	<fadeInTime>0.50</fadeInTime>
-	<solidTime>1.5</solidTime>
-	<fadeOutTime>0.5</fadeOutTime>
-	<growthRate>0.5</growthRate>
-  </FleckDef>
 </Defs>

@@ -1,0 +1,73 @@
+<Defs>
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Merchant_Crazy_Uproar_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Merchant/Crazy_Uproar</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0.25</fadeInTime>
+	<solidTime>0</solidTime>
+	<fadeOutTime>0.25</fadeOutTime>
+	<growthRate>1</growthRate>
+</FleckDef>
+
+<EffecterDef>
+	<defName>VPE_Ragna_Merchant_Crazy_Uproar_STNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<fleckDef>VPE_Ragna_Merchant_Crazy_Uproar_STNL</fleckDef>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>60</ticksBetweenMotes>
+			<positionOffset>(0, 0, 0.8)</positionOffset>
+			<scale>1</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>false</absoluteAngle>
+			<rotation>0</rotation>
+			<angle>0~0</angle>
+			<speed>0</speed>
+		</li>
+	</children>
+</EffecterDef>
+
+<!-- Mammonite -->
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Merchant_Mammonite_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Merchant/Mammonite</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0.25</fadeInTime>
+	<solidTime>0.75</solidTime>
+	<fadeOutTime>0.10</fadeOutTime>
+	<growthRate>1</growthRate>
+</FleckDef>
+
+<EffecterDef>
+	<defName>VPE_Ragna_Merchant_Mammonite_STNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<fleckDef>VPE_Ragna_Merchant_Mammonite_STNL</fleckDef>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>60</ticksBetweenMotes>
+			<positionOffset>(0, 0, 0)</positionOffset>
+			<scale>1</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>false</absoluteAngle>
+			<rotation>0</rotation>
+			<angle>0~0</angle>
+			<speed>0</speed>
+		</li>
+	</children>
+</EffecterDef>
+
+</Defs>

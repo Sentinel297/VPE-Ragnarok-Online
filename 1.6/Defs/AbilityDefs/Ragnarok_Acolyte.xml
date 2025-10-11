@@ -33,8 +33,14 @@
 			<psyfocusCost>0.13</psyfocusCost>
 			<entropyGain>70</entropyGain>
 			<prerequisites>
-			<li>VPE_Acolyte_DivineProtectionSTNL</li>
+				<li>VPE_Acolyte_DivineProtectionSTNL</li>
 			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -69,6 +75,12 @@
 			<psyfocusCost>0.05</psyfocusCost>
 			<entropyGain>40</entropyGain>
 		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Ragna_Acolyte_HealSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>90</maintainForTicks>
+		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
@@ -78,15 +90,7 @@
 	<description>Draws water around the caster and manipulate it to cure the caster's addiction, this ability requires standing on water to function.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Aqua_Benedicta_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
-	<targetMode>Pawn</targetMode>
-	<targetingParameters>
-		<canTargetLocations>false</canTargetLocations>
-		<canTargetSelf>true</canTargetSelf>
-		<canTargetAnimals>true</canTargetAnimals>
-		<canTargetPawns>true</canTargetPawns>
-		<canTargetHumans>true</canTargetHumans>
-		<canTargetMechs>true</canTargetMechs>
-	</targetingParameters>
+	<targetMode>Self</targetMode>
 	<!-- <chance>0</chance> -->
 	<range>9</range>
 	<radius>0</radius>
@@ -185,6 +189,12 @@
 			<li>VPE_Acolyte_HealSTNL</li>
 			</prerequisites>
 		</li>
+<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+	<effecterDef>VPE_Ragna_Acolyte_AgiUpSTNL</effecterDef>
+	<!-- <onCaster>true</onCaster> -->
+	<!-- <maintainForDuration>true</maintainForDuration> -->
+	<maintainForTicks>5</maintainForTicks>
+</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
@@ -288,8 +298,14 @@
 			<psyfocusCost>0.07</psyfocusCost>
 			<entropyGain>33</entropyGain>
 			<prerequisites>
-			<li>VPE_Acolyte_IncreaseAgiSTNL</li>
+				<li>VPE_Acolyte_IncreaseAgiSTNL</li>
 			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Ragna_Acolyte_AgiDownSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -325,8 +341,14 @@
 			<psyfocusCost>0.08</psyfocusCost>
 			<entropyGain>64</entropyGain>
 			<prerequisites>
-			<li>VPE_Acolyte_IncreaseAgiSTNL</li>
+				<li>VPE_Acolyte_IncreaseAgiSTNL</li>
 			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_BlessingSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -380,7 +402,7 @@
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Warp_Portal_scaled_5x_pngcrushed</iconPath>
 	<abilityClass>VPE_Ragnarok.Ability_WarpPortal</abilityClass>
 	<castSound>VPE_Acolyte_Portal_CastSTNL</castSound>
-	<radius>4.9</radius>
+	<radius>1.9</radius>
 	<castTime>60</castTime>
 	<targetMode>Tile</targetMode>
 	<range>9999</range>
@@ -393,7 +415,7 @@
 			<path>VPE_RagnarokAcolyteSTNL</path>
 			<level>4</level>
 			<order>2</order>
-			<psyfocusCost>0.7</psyfocusCost>
+			<psyfocusCost>0.3</psyfocusCost>
 			<entropyGain>0</entropyGain>
 			<prerequisites>
 				<li>VPE_Acolyte_TeleportSTNL</li>
@@ -426,6 +448,12 @@
 			<prerequisites>
 				<li>VPE_Acolyte_BlessingSTNL</li>
 			</prerequisites>
+		</li>
+				<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_AngelusSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -523,13 +551,13 @@
 	</comps>
 </ThingDef>
 
-  <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Acolyte_HolyLightSTNL</defName>
 	<label>Holy Light</label>
 	<description>Inflicts 30 points of flame damage to a single target.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Holy_Light_scaled_5x_pngcrushed</iconPath>
 	<castTime>30</castTime>
-	<targetMode>Self</targetMode>
+	<targetMode>Pawn</targetMode>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
 		<canTargetSelf>true</canTargetSelf>
@@ -539,8 +567,8 @@
 		<canTargetMechs>true</canTargetMechs>
 	</targetingParameters>
 	<!-- <chance>0</chance> -->
-	<range>0</range>
-	<radius>14.9</radius>
+	<range>14.9</range>
+	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_HolyLight</abilityClass>
@@ -552,9 +580,15 @@
 			<order>3</order>
 			<psyfocusCost>0.20</psyfocusCost>
 			<entropyGain>50</entropyGain>
-						<prerequisites>
-			<li>VPE_Acolyte_AngelusSTNL</li>
+			<prerequisites>
+				<li>VPE_Acolyte_AngelusSTNL</li>
 			</prerequisites>
+		</li>
+				<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_HolyLightSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>

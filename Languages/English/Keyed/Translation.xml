@@ -1,4 +1,5 @@
 <LanguageData>
 <SafetyWallMissStringSTNL>Miss!</SafetyWallMissStringSTNL>
 <FailedPetrifySTNL>Failed!</FailedPetrifySTNL>
+<VPERAGNAStolenItemSTNL>Stolen {0}!</VPERAGNAStolenItemSTNL>
 </LanguageData>

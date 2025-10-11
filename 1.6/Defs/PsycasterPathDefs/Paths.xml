@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget"> -->
+		<!-- <effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef> -->
+		<!-- <onCaster>true</onCaster> -->
+		<!-- <maintainForDuration>true</maintainForDuration> -->
+		<!-- <maintainForTicks>5</maintainForTicks> -->
+	<!-- </li> -->
+
+
+<!-- <EffecterDef> -->
+	<!-- <defName>VPE_Acolyte_CureSTNL</defName> -->
+	<!-- <children> -->
+		<!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass> -->
+			<!-- <fleckDef>VPE_Ragna_Acolyte_Cure_cureSTNL</fleckDef> -->
+			<!-- <positionRadius>0</positionRadius> -->
+			<!-- <ticksBetweenMotes>0</ticksBetweenMotes> -->
+			<!-- <positionOffset>(0, 0, 0.5)</positionOffset> -->
+			<!-- <scale>1</scale> -->
+			<!-- <spawnLocType>OnSource</spawnLocType> -->
+			<!-- <absoluteAngle>false</absoluteAngle> -->
+			<!-- <rotation>0</rotation> -->
+			<!-- <angle>0~0</angle> -->
+			<!-- <speed>0</speed> -->
+		<!-- </li> -->
+	<!-- </children> -->
+<!-- </EffecterDef> -->
+
 <!-- Swordsman -->
 
 <VanillaPsycastsExpanded.PsycasterPathDef>
 	<defName>VPE_RagnarokSwordsmanSTNL</defName>
 	<label>Swordsman</label>
 	<description>.</description>
-	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
-	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<background>UI_RagnarokSTNL/Tree/B_Swordman</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Swordman</altBackground>
 	<tab>Misc</tab>
 	<tooltip>.</tooltip>
 </VanillaPsycastsExpanded.PsycasterPathDef>
@@ -19,8 +46,8 @@
 	<defName>VPE_RagnarokMagicianSTNL</defName>
 	<label>Magician</label>
 	<description>.</description>
-	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
-	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<background>UI_RagnarokSTNL/Tree/B_Mage</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Mage</altBackground>
 	<tab>Misc</tab>
 	<tooltip>.</tooltip>
 </VanillaPsycastsExpanded.PsycasterPathDef>
@@ -31,8 +58,32 @@
 	<defName>VPE_RagnarokAcolyteSTNL</defName>
 	<label>Acolyte</label>
 	<description>.</description>
-	<background>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</background>
-	<altBackground>UI_RagnarokSTNL/Tree/SwordsmanTreeBase</altBackground>
+	<background>UI_RagnarokSTNL/Tree/B_Acolyte</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Acolyte</altBackground>
+	<tab>Misc</tab>
+	<tooltip>.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Merchant -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokMerchantSTNL</defName>
+	<label>Merchant</label>
+	<description>.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Merchant</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Merchant</altBackground>
+	<tab>Misc</tab>
+	<tooltip>.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Thief -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokThiefSTNL</defName>
+	<label>Thief</label>
+	<description>.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Thief</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Thief</altBackground>
 	<tab>Misc</tab>
 	<tooltip>.</tooltip>
 </VanillaPsycastsExpanded.PsycasterPathDef>

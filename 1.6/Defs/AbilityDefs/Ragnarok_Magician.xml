@@ -18,13 +18,14 @@
 		<canTargetHumans>true</canTargetHumans>
 		<canTargetMechs>true</canTargetMechs>
 	</targetingParameters>
+	<fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget>
 	<!-- <chance>0</chance> -->
 	<range>15.9</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_FrostDiver</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Frost_Diver_ef_frostdiver2_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -33,7 +34,7 @@
 			<psyfocusCost>0.05</psyfocusCost>
 			<entropyGain>26</entropyGain>
 			<prerequisites>
-			<li>VPE_Magician_ColdBoltSTNL</li>
+				<li>VPE_Magician_ColdBoltSTNL</li>
 			</prerequisites>
 		</li>
 	</modExtensions>
@@ -60,7 +61,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_Napalm</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Napalm_Beat_ef_napalmbeat_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -93,7 +94,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_Thunderstorm</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Thunderstorm_ef_thunderstorm_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -185,7 +186,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Sight_ef_sight_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -247,14 +248,14 @@
 	<description>Attack an enemy with a fire bolt to inflict 10 points of damage and set them ablaze.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Bolt</iconPath>
 	<castTime>60</castTime>
-	<targetMode>Pawn</targetMode>
+	<targetMode>Location</targetMode>
 	<targetingParameters>
-		<canTargetLocations>false</canTargetLocations>
-		<canTargetSelf>true</canTargetSelf>
-		<canTargetAnimals>true</canTargetAnimals>
-		<canTargetPawns>true</canTargetPawns>
-		<canTargetHumans>true</canTargetHumans>
-		<canTargetMechs>true</canTargetMechs>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
 	</targetingParameters>
 	<!-- <chance>0</chance> -->
 	<range>15.9</range>
@@ -360,6 +361,7 @@
 		<texPath>UI_RagnarokSTNL/Flecks/Magician/firetexb</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>MoteGlow</shaderType>
+		<drawSize>(2,2)</drawSize>
 	</graphicData>
 	<drawOffscreen>true</drawOffscreen>
 	<drawerType>RealtimeOnly</drawerType>
@@ -395,7 +397,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_StoneCurse</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Stone_Curse_ef_stonecurse_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -416,7 +418,7 @@
 	<label>Energy Coat</label>
 	<description>Convert the caster's current psyfocus into a shield, the effectiveness of this shield will depend on the current amount of the caster's focus.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Energy_Coat</iconPath>
-	<!-- <durationTime>600</durationTime> -->
+	<durationTime>18000</durationTime>
 	<castTime>300</castTime>
 	<targetMode>Self</targetMode>
 	<!-- <chance>0</chance> -->
@@ -425,7 +427,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Energy_Coat_sage_magicrod_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -466,7 +468,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_Firewall</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Fire_Wall_ef_firewall_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>
@@ -533,7 +535,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Ragnarok.Ability_SafetyWall</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>VPE_Magician_Safety_Wall_ef_glasswall_CastSTNL</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_RagnarokMagicianSTNL</path>

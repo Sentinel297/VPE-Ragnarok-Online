@@ -75,10 +75,8 @@
 	<stages>
 		<li>
 			<statFactors>
-				<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-				<ArmorRating_Heat>0.5</ArmorRating_Heat>
-				<IncomingDamageFactor>1.5</IncomingDamageFactor>
+			<VEF_MeleeAttackDamageFactor>0.5</VEF_MeleeAttackDamageFactor>
+			<VEF_RangeAttackDamageFactor>0.5</VEF_RangeAttackDamageFactor>
 			</statFactors>
 		</li>
 	</stages>
@@ -315,6 +313,35 @@
 		<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>18000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_PneumaHediffSTNL</defName>
+	<label>Pneuma</label>
+	<description>Custom hediff that handles deletion of nearby projectiles.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Pneuma</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<becomeVisible>false</becomeVisible>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>2</disappearsAfterTicks>
 			<showRemainingTime>true</showRemainingTime>
 		</li>
 	</comps>

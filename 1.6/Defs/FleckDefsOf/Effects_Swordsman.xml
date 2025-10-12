@@ -40,7 +40,7 @@
 		<texPath>UI_RagnarokSTNL/Flecks/Swordsman/Endure</texPath>
 		<renderInstanced>true</renderInstanced>
 		<color>(255, 255, 255, 255)</color>
-		<drawSize>(3, 3)</drawSize>
+		<drawSize>(3, 4)</drawSize>
 	</graphicData>
 	<altitudeLayer>Darkness</altitudeLayer>
 	<fadeInTime>0.50</fadeInTime>

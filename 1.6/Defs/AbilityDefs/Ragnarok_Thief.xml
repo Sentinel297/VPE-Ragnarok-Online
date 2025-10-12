@@ -297,6 +297,7 @@
 		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	</targetingParameters>
 	<!-- <chance>0</chance> -->
+	<cooldownTime>60</cooldownTime>
 		<range>4.9</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>

@@ -19,7 +19,7 @@
       <impactSound>Explosion_Flame</impactSound>
       <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
       <motesPerCell>0</motesPerCell>
-	  <explosionDamageFactor>2</explosionDamageFactor>
+	  <explosionDamageFactor>1</explosionDamageFactor>
       <explosionRadius>1</explosionRadius>
       <explosionDamage>Flame</explosionDamage>
     </skyfaller>
@@ -44,7 +44,7 @@
       <impactSound>Explosion_Bomb</impactSound>
       <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
       <motesPerCell>0</motesPerCell>
-	  <explosionDamageFactor>2</explosionDamageFactor>
+	  <explosionDamageFactor>1.5</explosionDamageFactor>
       <explosionRadius>1</explosionRadius>
       <explosionDamage>VPE_ColdBoltSNTL</explosionDamage>
     </skyfaller>

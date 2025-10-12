@@ -1,6 +1,7 @@
 Abilities:
 
-Acolyte:
+
+<h1>Acolyte</h1>
 
 T1:
 
@@ -74,7 +75,7 @@ Creates a green cloud at the target location that will block projectiles from ha
 
 
 
-Archer:
+<h1>Archer</h1>
 
 T1:
 
@@ -110,7 +111,7 @@ Boosts ranged attack speed and accuracy temporarily.\n\nOn cast: Will reveal nea
 
 
 
-Magician
+<h1>Mage</h1>
 
 T1:
 
@@ -147,15 +148,16 @@ Inflicts frostbite damage to the target and has a 65% chance to freeze the targe
 Thunder Storm:
 Conjure a large pillar of lightning to strike the target area.
 
-T4:
 
 Fire Ball:
 Calls forth a fireball to inflict flame damage to all enemies within the area of effect.
 
+
 Energy Coat:
 Convert the caster's current psyfocus into a low-energy shield, the effectiveness of this shield will depend on the current amount of the caster's focus.
 
-T5:
+
+T4:
 
 Fire Wall:
 Creates a wall of flame on a target location that will inflict 10 points of fire damage and push back anyone that attempts to pass through.
@@ -164,7 +166,7 @@ Creates a wall of flame on a target location that will inflict 10 points of fire
 Safety Wall:
 Creates a pink light pillar on a targeted location that prevents anyone inside from taking melee damage.
 
-T6:
+T5:
 
 Stone Curse:
 Attempt to petrify a single target. Stone curse has a 60% chance to succeed and will last for a day on success.
@@ -173,8 +175,7 @@ Attempt to petrify a single target. Stone curse has a 60% chance to succeed and 
 
 
 
-
-Merchant:
+<h1>Merchant</h1>
 
 T1:
 
@@ -223,7 +224,7 @@ Dumps the carried cart on the target creature, inflicting damage depending on th
 
 
 
-Swordsman:
+<h1>Swordman</h1>
 
 T1:
 
@@ -269,7 +270,7 @@ Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAl
 
 
 
-Thief:
+<h1>Thief</h1>
 
 T1:
 

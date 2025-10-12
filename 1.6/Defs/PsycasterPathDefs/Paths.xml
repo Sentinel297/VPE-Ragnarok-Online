@@ -17,7 +17,7 @@
 	
 <VanillaPsycastsExpanded.PsycasterPathDef>
 	<defName>VPE_RagnarokMagicianSTNL</defName>
-	<label>Magician</label>
+	<label>Mage</label>
 	<description>The Mage is the reflection of a life devoted to study, the echo of elemental forces that refuse to be contained.\n\nThey walk with the arrogance of one who knows secrets that could split mountains, yet with the same fragility as the pages of the books they studied.</description>
 	<background>UI_RagnarokSTNL/Tree/B_Mage</background>
 	<altBackground>UI_RagnarokSTNL/Tree/ALT_Mage</altBackground>

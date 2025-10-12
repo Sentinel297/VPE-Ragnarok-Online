@@ -124,7 +124,7 @@
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_Swordsman_MagnumBreakSTNL</defName>
 		<label>Magnum Break</label>
-		<description>Deal a minor wound to the caster in order to inflict heat damage on nearby enemies and force them backward. The caster's weapon will set targets ablaze for 10 seconds after using this ability.</description>
+		<description>Deal a minor wound to the caster in order to inflict heat damage on nearby enemies and force them backward. The caster's weapon will conjure fiery explosions for 10 seconds after using this ability.</description>
 		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Magnum_Break</iconPath>
 		<castTime>30</castTime>
 		<durationTime>600</durationTime>

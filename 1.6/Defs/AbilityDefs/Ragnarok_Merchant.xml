@@ -168,7 +168,7 @@
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_Merchant_RepairItemSTNL</defName>
 		<label>Repair</label>
-		<description>Fully repair everything within the target's inventory.</description>
+		<description>Fully repair everything within the target's inventory.\n\nMay also be used to repair mechanoids.</description>
 		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/ALT_Weapon_Repair_scaled_5x_pngcrushed</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Pawn</targetMode>
@@ -243,7 +243,7 @@
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_Merchant_DecorateCartSTNL</defName>
 		<label>Decorate Cart</label>
-		<description>Decorate the current cart, this will cause the caster to gain increased beauty and prisoner conversion efficiency.</description>
+		<description>Decorate the current cart, this will cause the caster to gain increased beauty and prisoner recruitment efficiency.</description>
 		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Cart_Decoration_scaled_5x_pngcrushed</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Self</targetMode>
@@ -315,7 +315,7 @@
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_Merchant_CartRevolutionSTNL</defName>
 		<label>Cart Revolution</label>
-		<description>Dumps the carried cart on the target, inflicting damage depending on the mass of items carried by the caster divided by 2 to creatures standing nearby, will additionally push back creatures within the area of effect.\n\nThis action will destroy the current cart.</description>
+		<description>Dumps the carried cart on the target creature, inflicting damage depending on the total mass of items carried by the caster divided by 2 to creatures standing nearby, will additionally push back creatures within the area of effect.\n\nThis action will destroy the current cart.</description>
 		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Cart_Revolution_scaled_5x_pngcrushed</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Pawn</targetMode>

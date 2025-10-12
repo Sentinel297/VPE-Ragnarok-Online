@@ -6,7 +6,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_FrostDiverSTNL</defName>
 	<label>Frost Diver</label>
-	<description>Inflicts 10 frostbite damage and has a 65% chance to freeze the target for 20 seconds.</description>
+	<description>Inflicts frostbite damage to the target and has a 65% chance to freeze the target for 20 seconds.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Frost_Diver</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Pawn</targetMode>
@@ -76,7 +76,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_ThunderstormSTNL</defName>
 	<label>Thunder Storm</label>
-	<description>Call forth bolts of lightning to strike every cell within the target area.</description>
+	<description>Conjure a large pillar of lightning to strike the target area.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Thunderstorm</iconPath>
 	<castTime>90</castTime>
 	<targetMode>Location</targetMode>
@@ -114,7 +114,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_ColdBoltSTNL</defName>
 	<label>Cold Bolt</label>
-	<description>Strike an enemy with 10 bolts of frigid ice.</description>
+	<description>Strike an enemy with up to 10 bolts of frigid ice.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Cold_Bolt</iconPath>
 	<castTime>30</castTime>
 	<targetMode>Location</targetMode>
@@ -175,7 +175,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_SightSTNL</defName>
 	<label>Sight</label>
-	<description>Summon an orb of fire that orbits around the caster to reveal every invisible creature within the area of effect.</description>
+	<description>Summon an orb of fire that will orbit around the caster to reveal every invisible creature within the area of effect.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Sight</iconPath>
 	<durationTime>600</durationTime>
 	<castTime>30</castTime>
@@ -207,7 +207,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_LightningBoltSTNL</defName>
 	<label>Lightning Bolt</label>
-	<description>Call forth a bolt of lightning from the skies to strike at the target location.</description>
+	<description>Call forth up to 10 bolts of lightning from the skies to strike at the target location.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Lightning_Bolt</iconPath>
 	<castTime>30</castTime>
 	<targetMode>Location</targetMode>
@@ -245,7 +245,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_FireBoltSTNL</defName>
 	<label>Fire Bolt</label>
-	<description>Attack an enemy with a fire bolt to inflict 10 points of damage and set them ablaze.</description>
+	<description>Attack an enemy with up to 10 fiery bolts to set them ablaze.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Bolt</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Location</targetMode>
@@ -280,8 +280,8 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_IncreaseSPRecoverySTNL</defName>
-	<label>Increase SP recovery</label>
-	<description>Enhance Psyfocus recovery, 10% of the caster's psyfocus will be recharged after standing still for 10 seconds.</description>
+	<label>Passive: Increase SP recovery</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nEnhance Psyfocus recovery, 10% of the caster's psyfocus will be recharged after standing still for 10 seconds.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Increase_SP_Recovery</iconPath>
 	<durationTime>600</durationTime>
 	<castTime>30</castTime>
@@ -417,7 +417,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_EnergyCoatSTNL</defName>
 	<label>Energy Coat</label>
-	<description>Convert the caster's current psyfocus into a shield, the effectiveness of this shield will depend on the current amount of the caster's focus.</description>
+	<description>Convert the caster's current psyfocus into a low-energy shield, the effectiveness of this shield will depend on the current amount of the caster's focus.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Energy_Coat</iconPath>
 	<durationTime>18000</durationTime>
 	<castTime>300</castTime>
@@ -451,7 +451,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Magician_FirewallSTNL</defName>
 	<label>Fire Wall</label>
-	<description>Creates a wall of flame on a target location that will inflict 10 points of fire damage and push back anything that attempts to pass through.</description>
+	<description>Creates a wall of flame on a target location that will inflict 10 points of fire damage and push back anyone that attempts to pass through.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Wall</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Location</targetMode>

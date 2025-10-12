@@ -240,7 +240,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Acolyte_DemonBaneSTNL</defName>
 	<label>Passive: Demon Bane</label>
-	<description>Places a temporary buff on a single target that will allow them to deal a second instance of physical damage to entities.\n\nThe amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.</description>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will receive a buff that will allow them to deal a second instance of physical damage to entities.\n\nThe amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Demon_Bane_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Self</targetMode>
@@ -494,7 +494,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Acolyte_PneumaSTNL</defName>
 	<label>Pneuma</label>
-	<description>Creates a green cloud at the target location that will block projectiles from passing through.</description>
+	<description>Creates a green cloud at the target location that will block projectiles from harming allies that standing nearby.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Pneuma_scaled_5x_pngcrushed</iconPath>
 	<castTime>15</castTime>
 	<durationTime>600</durationTime>

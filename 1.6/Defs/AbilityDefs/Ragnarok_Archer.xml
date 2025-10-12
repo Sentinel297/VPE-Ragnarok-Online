@@ -128,7 +128,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Archer_ArrowRepelSTNL</defName>
 	<label>Arrow Repel</label>
-	<description>Shoots the target with a charged shot, the force of this projectile will push the target back 4 cells.</description>
+	<description>Shoots the target with a charged shot using the current weapon's projectile, the sheer speed of this projectile will push the target back 4 cells.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Arrow_Repel_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Pawn</targetMode>
@@ -165,7 +165,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Archer_ArrowShowerSTNL</defName>
 	<label>Arrow Shower</label>
-	<description>Shoots a projectile that will split into 3 for each target within the radius and push them back 2 cells.</description>
+	<description>Shoots a projectile based on the caster's current weapon that will split into 3 for each target within the radius and push them back 2 cells.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Arrow_Shower_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Location</targetMode>

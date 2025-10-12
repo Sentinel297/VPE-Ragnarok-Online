@@ -2,7 +2,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_Pushcart1_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -62,7 +62,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR1_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -122,7 +122,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR2_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -182,7 +182,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR3_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -242,7 +242,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR4_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -303,7 +303,7 @@
 	<HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR5_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -364,7 +364,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR6_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -424,7 +424,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR7_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -484,7 +484,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR8_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -544,7 +544,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR9_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -605,7 +605,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR10_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -665,7 +665,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR11_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>
@@ -725,7 +725,7 @@
 <HediffDef>
 	<defName>VPE_Ragna_Merchant_PushcartVAR12_SNTL</defName>
 	<label>Pushcart</label>
-	<description>A pushcart allowing the user to carry more items.</description>
+	<description>A pushcart that allows the user to carry more items.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
 	<minSeverity>0</minSeverity>

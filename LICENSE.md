@@ -23,4 +23,4 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 
 This mod requires [Vanilla Psycasts Expanded], which is property of the VEF team and is subject to its own license. Users must comply with the framework’s license terms. This copyright applies only to the original content of this mod.
 
-By reading this, you agree to these terms and acknowledge that any infringement of this copyright may result in removal of the infringing content via DMCA if the infringing party does not comply.
+By using this mod, you agree to these terms and acknowledge that any infringement of this copyright may result in removal of the infringing content via DMCA if the infringing party does not comply.

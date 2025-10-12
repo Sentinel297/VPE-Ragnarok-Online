@@ -252,10 +252,10 @@
 	</stages>
 	<comps>
 		<li Class="HediffCompProperties_DisappearsOnDeath"/>
-		<li Class="HediffCompProperties_Disappears">
-			<disappearsAfterTicks>14400</disappearsAfterTicks>
-			<showRemainingTime>true</showRemainingTime>
-		</li>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>14400</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
 	</comps>
 </HediffDef>
 

@@ -1,9 +1,0 @@
-<Patch>
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/GameConditionDef[defName="SolarFlare"]/silencedByConditions</xpath> -->
-		<!-- <value> -->
-			<!-- <li>VPE_UmbralVeilSTNL</li> -->
-			<!-- <li>VPE_UmbraPsychicDarknessSTNL</li> -->
-		<!-- </value> -->
-	<!-- </Operation> -->
-</Patch>

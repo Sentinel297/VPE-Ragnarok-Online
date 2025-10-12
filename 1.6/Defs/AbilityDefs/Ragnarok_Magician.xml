@@ -286,12 +286,12 @@
 	<durationTime>600</durationTime>
 	<castTime>30</castTime>
 	<targetMode>Self</targetMode>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>0</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -301,11 +301,12 @@
 			<psyfocusCost>0.06</psyfocusCost>
 			<entropyGain>10</entropyGain>
 			<prerequisites>
-			<li>VPE_Magician_NapalmBeatSTNL</li>
+				<li>VPE_Magician_NapalmBeatSTNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VEF.Abilities.AbilityExtension_Hediff">
-			<hediff>VPE_Ragnarok_Magician_IncSPRecovSTNL</hediff>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Magician_IncSPRecovSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>

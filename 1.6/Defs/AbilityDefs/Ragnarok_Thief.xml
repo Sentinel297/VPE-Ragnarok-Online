@@ -60,7 +60,7 @@
 		<!-- <canTargetItems>true</canTargetItems> -->
 		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	</targetingParameters>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>0</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
@@ -179,7 +179,7 @@
 		<!-- <canTargetItems>true</canTargetItems> -->
 		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 	</targetingParameters>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>0</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>

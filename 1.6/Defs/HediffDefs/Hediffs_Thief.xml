@@ -1,35 +1,4 @@
 <Defs>
-<!-- <HediffDef> -->
-	<!-- <defName>VPE_Ragnarok_Thief_AwarenessSTNL</defName> -->
-	<!-- <label>Awareness</label> -->
-	<!-- <description>This creature cannot be stolen from again.</description> -->
-	<!-- <hediffClass>HediffWithComps</hediffClass> -->
-	<!-- <initialSeverity>1</initialSeverity> -->
-	<!-- <minSeverity>0</minSeverity> -->
-	<!-- <maxSeverity>1</maxSeverity> -->
-	<!-- <lethalSeverity>1</lethalSeverity> -->
-	<!-- <defaultLabelColor>(1, 1, 1)</defaultLabelColor> -->
-	<!-- <makesSickThought>false</makesSickThought> -->
-	<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
-	<!-- <isBad>false</isBad> -->
-	<!-- <everCurableByItem>false</everCurableByItem> -->
-	<!-- <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration> -->
-	<!-- <stages> -->
-		<!-- <li> -->
-		<!-- </li> -->
-	<!-- </stages> -->
-	<!-- <comps> -->
-		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
-		<!-- <li Class="HediffCompProperties_Disappears"> -->
-			<!-- <disappearsAfterTicks>30000</disappearsAfterTicks> -->
-			<!-- <showRemainingTime>true</showRemainingTime> -->
-		<!-- </li> -->
-	<!-- </comps> -->
-<!-- </HediffDef> -->
-
-		<!-- <li Class="VEF.Abilities.AbilityExtension_Hediff"> -->
-			<!-- <hediff>VPE_Ragnarok_Acolyte_DivineProtectionCasterSTNL</hediff> -->
-		<!-- </li> -->
 
 <HediffDef>
 	<defName>VPE_Ragnarok_Thief_AwarenessSTNL</defName>

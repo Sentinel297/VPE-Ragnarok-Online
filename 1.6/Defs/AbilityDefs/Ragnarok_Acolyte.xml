@@ -116,8 +116,8 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Acolyte_DivineProtectionSTNL</defName>
-	<label>Divine Protection</label>
-	<description>Reduce the offensive capabilities of nearby entities around the caster.</description>
+	<label>Passive: Divine Protection</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nReduce the offensive capabilities of nearby entities around the caster.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Divine_Protection_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Self</targetMode>
@@ -131,12 +131,12 @@
 		<canTargetItems>true</canTargetItems>
 		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 	</targetingParameters>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>0</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -145,12 +145,13 @@
 			<order>1</order>
 			<psyfocusCost>0.05</psyfocusCost>
 			<entropyGain>20</entropyGain>
-						<prerequisites>
-			<li>VPE_Acolyte_HealSTNL</li>
+			<prerequisites>
+				<li>VPE_Acolyte_HealSTNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VEF.Abilities.AbilityExtension_Hediff">
-			<hediff>VPE_Ragnarok_Acolyte_DivineProtectionCasterSTNL</hediff>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Acolyte_DivineProtectionCasterSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -238,17 +239,17 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Acolyte_DemonBaneSTNL</defName>
-	<label>Demon Bane</label>
+	<label>Passive: Demon Bane</label>
 	<description>Places a temporary buff on a single target that will allow them to deal a second instance of physical damage to entities.\n\nThe amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.</description>
 	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Demon_Bane_scaled_5x_pngcrushed</iconPath>
 	<castTime>60</castTime>
 	<targetMode>Self</targetMode>
-	<!-- <chance>0</chance> -->
+	<chance>0</chance>
 	<range>9</range>
 	<radius>0</radius>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
 	<castSound>PsycastPsychicPulse</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -261,8 +262,9 @@
 			<li>VPE_Acolyte_DivineProtectionSTNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VEF.Abilities.AbilityExtension_Hediff">
-			<hediff>VPE_Ragnarok_Acolyte_DemonBaneSTNL</hediff>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Acolyte_DemonBaneSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>

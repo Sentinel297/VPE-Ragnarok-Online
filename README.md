@@ -6,7 +6,7 @@ Abilities:
 T1:
 
 Heal:
-Heals every wound in the target's health tab by half, additionally substracts 1 from the severity of non permanent wounds.\n\nTargeting entities with this ability will deal 15 flame damage to them instead.
+Heals every wound in the target's health tab by half, additionally substracts 1 from the severity of non permanent wounds. Targeting entities with this ability will deal 15 flame damage to them instead.
 
 T2:
 
@@ -33,7 +33,7 @@ Draws water around the caster and manipulate it to cure the caster's addiction, 
 
 
 Passive: Demon Bane:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will receive a buff that will allow them to deal a second instance of physical damage to entities.\n\nThe amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.
+Passive Skill: Unlocking this ability will automatically apply its effect. This person will receive a buff that will allow them to deal a second instance of physical damage to entities. The amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.
 
 
 Decrease Agility:
@@ -41,7 +41,7 @@ Attempts to place a temporary dbuff on the target that decreases movement speed.
 
 
 Blessing:
-Places a temporary buff on a single target that increases, attack strength, attack speed, and reduce psyfocus consumption for 240 sec.\n\nEntities will have the aforementioned stats reduced for the duration of this condition.
+Places a temporary buff on a single target that increases, attack strength, attack speed, and reduce psyfocus consumption for 240 sec. Entities will have the aforementioned stats reduced for the duration of this condition.
 
 T4:
 
@@ -85,12 +85,12 @@ Shoots twice at the target by using the current ranged weapon.
 T2:
 
 Passive: Owl's Eye:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nGain a 40% increase in shooting accuracy.
+Passive Skill: Unlocking this ability will automatically apply its effect. Gain a 40% increase in shooting accuracy.
 
 T3:
 
 Passive: Vulture's Eye
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nGain 20% more range with weapons as well as another 40% bonus to accuracy.
+Passive Skill: Unlocking this ability will automatically apply its effect. Gain 20% more range with weapons as well as another 40% bonus to accuracy.
 
 T4:
 
@@ -103,7 +103,7 @@ Shoots a projectile based on the caster's current weapon that will split into 3 
 T5:
 
 Improve Concentration:
-Boosts ranged attack speed and accuracy temporarily.\n\nOn cast: Will reveal nearby invisible enemies.
+Boosts ranged attack speed and accuracy temporarily. On cast: Will reveal nearby invisible enemies.
 
 
 
@@ -137,7 +137,7 @@ Attack an enemy with up to 10 fiery bolts to set them ablaze.
 
 
 Passive: Increase SP recovery:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nEnhance Psyfocus recovery, 10% of the caster's psyfocus will be recharged after standing still for 10 seconds.
+Passive Skill: Unlocking this ability will automatically apply its effect. Enhance Psyfocus recovery, 10% of the caster's psyfocus will be recharged after standing still for 10 seconds.
 
 T3:
 
@@ -180,12 +180,12 @@ Attempt to petrify a single target. Stone curse has a 60% chance to succeed and 
 T1:
 
 Passive: Carry Weight Increase:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nIncreases carry weight and caravan mass carrying capacity by 3 times the normal amount.
+Passive Skill: Unlocking this ability will automatically apply its effect. Increases carry weight and caravan mass carrying capacity by 3 times the normal amount.
 
 T2:
 
 Passive: Discount:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllows this person to get better prices while trading.
+Passive Skill: Unlocking this ability will automatically apply its effect. Allows this person to get better prices while trading.
 
 Pushcart:
 Allows the caster to summon a pushcart that will further increase their carrying capacity.
@@ -193,7 +193,7 @@ Allows the caster to summon a pushcart that will further increase their carrying
 T3:
 
 Passive: Overcharge:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllows this person to get even better prices while trading.
+Passive Skill: Unlocking this ability will automatically apply its effect. Allows this person to get even better prices while trading.
 
 Change Pushcart Appearance:
 Changes the appearance of the pushcart.
@@ -201,7 +201,7 @@ Changes the appearance of the pushcart.
 T4:
 
 Repair:
-Fully repair everything within the target's inventory.\n\nMay also be used to repair mechanoids.
+Fully repair everything within the target's inventory. May also be used to repair mechanoids.
 
 
 Crazy Uproar:
@@ -217,7 +217,7 @@ Mammonite:
 Substracts 1k silver from the caster's inventory to strike the target with the power of greed, instantly killing them.
 
 Cart Revolution:
-Dumps the carried cart on the target creature, inflicting damage depending on the total mass of items carried by the caster divided by 2 to creatures standing nearby, will additionally push back creatures within the area of effect.\n\nThis action will destroy the current cart.
+Dumps the carried cart on the target creature, inflicting damage depending on the total mass of items carried by the caster divided by 2 to creatures standing nearby, will additionally push back creatures within the area of effect. This action will destroy the current cart.
 
 
 
@@ -229,7 +229,7 @@ Dumps the carried cart on the target creature, inflicting damage depending on th
 T1:
 
 Passive: Sword Mastery:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nDeal increased damage with melee attacks.
+Passive Skill: Unlocking this ability will automatically apply its effect. Deal increased damage with melee attacks.
 
 T2:
 
@@ -238,7 +238,7 @@ Hit an enemy with crushing force, Bash will have a 25% chance to stun the target
 
 
 Provoke:
-Enrage a single target, greatly reducing its defense while slightly increasing its damage output.\n\n80% success chance.
+Enrage a single target, greatly reducing its defense while slightly increasing its damage output. 80% success chance.
 
 
 T3:
@@ -248,7 +248,7 @@ Deal a minor wound to the caster in order to inflict heat damage on nearby enemi
 
 
 Passive: Two Handed Sword Mastery:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nGain an even larger increase to damage output from melee attacks.
+Passive Skill: Unlocking this ability will automatically apply its effect. Gain an even larger increase to damage output from melee attacks.
 
 
 Endure:
@@ -260,12 +260,12 @@ Berserk:
 Suffering from a bleeding wound will enrage the caster, causing them to enter a berserk state and granting them increased attack at the cost of suffering more damage from hits.
 
 Passive: Increase HP recovery:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nEnhance natural HP recovery, health regeneration will not happen if the caster is moving.
+Passive Skill: Unlocking this ability will automatically apply its effect. Enhance natural HP recovery, health regeneration will not happen if the caster is moving.
 
 T5:
 
 Passive: HP Recovery While Moving:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllow the caster to regenerate health while moving at a lower rate than while standing still.
+Passive Skill: Unlocking this ability will automatically apply its effect. Allow the caster to regenerate health while moving at a lower rate than while standing still.
 
 
 
@@ -280,11 +280,11 @@ Steal a random item from the target's inventory, once stolen from, the target wi
 T2:
 
 Passive: Double Attack:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will have a 70% chance to land an additional hit when using melee attacks. Additionally increases melee attack speed by 10%.
+Passive Skill: Unlocking this ability will automatically apply its effect. This person will have a 70% chance to land an additional hit when using melee attacks. Additionally increases melee attack speed by 10%.
 
 
 Hiding:
-Conceals the caster to avoid enemies, Hiding will end once the duration runs out or psyfocus reaches 0%.\n\nRecasting while active will end the skill early.
+Conceals the caster to avoid enemies, Hiding will end once the duration runs out or psyfocus reaches 0%. Recasting while active will end the skill early.
 
 
 Envenom:
@@ -293,11 +293,11 @@ Coats the weapon in poison and strikes the target, has a 50% chance to inflict t
 T3
 
 Passive: Increased Flee:
-Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will obtain an increase of 50% to their melee dodge chance. They will additionally gain a 10% increase to movement speed.
+Passive Skill: Unlocking this ability will automatically apply its effect. This person will obtain an increase of 50% to their melee dodge chance. They will additionally gain a 10% increase to movement speed.
 
 
 Sand Attack:
-Hurls sand at the target, dealing 10 blunt damage. \n\nHas a 10% chance to stun the target for 10 seconds.
+Hurls sand at the target, dealing 10 blunt damage.  Has a 10% chance to stun the target for 10 seconds.
 
 
 Detoxify:
@@ -314,4 +314,4 @@ Pick up a small stone from the ground.
 T5:
 
 Stone Fling:
-Fling one of the carried stone to the target, dealing 15 points of damage.\n\nHas a 5% chance to stun the target for 15 seconds.
+Fling one of the carried stone to the target, dealing 15 points of damage. Has a 5% chance to stun the target for 15 seconds.

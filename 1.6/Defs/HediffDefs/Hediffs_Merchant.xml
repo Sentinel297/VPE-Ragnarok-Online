@@ -17,16 +17,18 @@
 	<stages>
 		<li>
 			<statFactors>
-			<CarryingCapacity>3</CarryingCapacity>
-			<VEF_MassCarryCapacity>3</VEF_MassCarryCapacity>
+				<CarryingCapacity>3</CarryingCapacity>
+				<VEF_MassCarryCapacity>3</VEF_MassCarryCapacity>
+				<CarryBulk MayRequire="CETeam.CombatExtended">3</CarryBulk>
+				<CarryWeight MayRequire="CETeam.CombatExtended">3</CarryWeight>
 			</statFactors>
 		</li>
 	</stages>
 	<comps>
 		<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		<!-- <li Class="HediffCompProperties_Disappears"> -->
-			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
-			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>true</showRemainingTime> -->
 		<!-- </li> -->
 	</comps>
 </HediffDef>

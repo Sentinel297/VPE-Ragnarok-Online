@@ -1,0 +1,350 @@
+<Defs>
+	<HediffDef>
+		<defName>VPE_Ragnarok_Acolyte_SignumCrucisSTNL</defName>
+		<label>Signum Crucis</label>
+		<description>This entity is being weakened severly, it will take massively increase damage for the duration of this condition.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				<IncomingDamageFactor>1.5</IncomingDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>20000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_DivineProtectionCasterSTNL</defName>
+	<label>Divine Protection</label>
+	<description>This person will weaken enemy entities within a 7 cell radius around themselves, which will reduce their outgoing damage by 30%.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_DivineProtection</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+		<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+</HediffDef>
+	
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_DivineProtectionEntitySTNL</defName>
+	<label>Divine Protection</label>
+	<description>This entity is being weakened, it will deal reduced damage to other creatures.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+			<VEF_MeleeAttackDamageFactor>0.5</VEF_MeleeAttackDamageFactor>
+			<VEF_RangeAttackDamageFactor>0.5</VEF_RangeAttackDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>20000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_IncreaseAgiSTNL</defName>
+	<label>Increased Agility</label>
+	<description>This creature has had their agility increased by an acolyte, they will attack and move faster for the duration of this condition.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.5</RangedCooldownFactor>
+			</statFactors>
+			<capMods>
+			<li>
+			<capacity>Moving</capacity>
+			<postFactor>1.5</postFactor>
+			</li>
+			</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>14400</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_DecreaseAgiSTNL</defName>
+	<label>Decreased Agility</label>
+	<description>This creature has had their agility decreased by an acolyte, they will move slower for the duration of this condition.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<MeleeCooldownFactor>1.5</MeleeCooldownFactor>
+				<RangedCooldownFactor>1.5</RangedCooldownFactor>
+			</statFactors>
+			<capMods>
+				<li>
+					<capacity>Moving</capacity>
+					<postFactor>0.50</postFactor>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>7200</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_BlessingGoodSTNL</defName>
+	<label>Blessing</label>
+	<description>This creature has had their stats increased by an acolyte, they will gain various benefits for the duration of this condition.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<statFactors>
+		<VEF_MeleeAttackDamageFactor>1.10</VEF_MeleeAttackDamageFactor>
+		<VEF_RangeAttackDamageFactor>1.10</VEF_RangeAttackDamageFactor>
+		<ShootingAccuracyPawn>1.50</ShootingAccuracyPawn>
+		</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>14400</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_BlessingBadSTNL</defName>
+	<label>Blessing</label>
+	<description>This creature has had their stats decreased by an acolyte, they will have lowered stats for the duration of this condition.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.2, 0.2, 0.5)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<statFactors>
+		<VEF_MeleeAttackDamageFactor>0.90</VEF_MeleeAttackDamageFactor>
+		<VEF_RangeAttackDamageFactor>0.90</VEF_RangeAttackDamageFactor>
+		<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+		</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>14400</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_DemonBaneSTNL</defName>
+	<label>Demon Bane</label>
+	<description>This person will deal twice the damage they normally would inflict to entities and mutants.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_DemonBane</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>14400</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_RuwachSTNL</defName>
+	<label>Ruwach</label>
+	<description>This person will reveal nearby invisible creatures and inflict 15 points of flame damage to them upon reveal.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Ruwach</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+	    <li Class="HediffCompProperties_DisappearsOnDeath" />
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>600</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_AngelusSTNL</defName>
+	<label>Angelus</label>
+	<description>This creature is being protected by an acolyte, they will receive reduced damage from attacks.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<statFactors>
+		<IncomingDamageFactor>0.50</IncomingDamageFactor>
+		</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>18000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Acolyte_PneumaHediffSTNL</defName>
+	<label>Pneuma</label>
+	<description>Custom hediff that handles deletion of nearby projectiles.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Pneuma</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<becomeVisible>false</becomeVisible>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>2</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+</Defs>

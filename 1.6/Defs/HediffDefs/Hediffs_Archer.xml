@@ -1,0 +1,99 @@
+<Defs>
+<HediffDef>
+	<defName>VPE_Ragnarok_Archer_OwlsEyeSTNL</defName>
+	<label>Owl's Eye</label>
+	<description>This archer can aim better than other people, they also deal more damage with ranged weapons.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<ShootingAccuracyPawn>1.40</ShootingAccuracyPawn>
+				<VEF_RangeAttackDamageFactor>1.10</VEF_RangeAttackDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Archer_VulturesEyeSTNL</defName>
+	<label>Vulture's Eye</label>
+	<description>This archer may reach targets further than other people, they also benefit from an increase in accuracy.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<VEF_VerbRangeFactor>1.20</VEF_VerbRangeFactor>
+				<ShootingAccuracyPawn>1.40</ShootingAccuracyPawn>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Archer_ImprovedConcentrationSTNL</defName>
+	<label>Improved Concentration</label>
+	<description>Increased concentration allows this archer to shoot faster and with greater accuracy.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<VEF_RangeAttackDamageFactor>1.10</VEF_RangeAttackDamageFactor>
+				<RangedCooldownFactor>0.5</RangedCooldownFactor>
+				<ShootingAccuracyPawn>1.60</ShootingAccuracyPawn>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>20000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+</Defs>

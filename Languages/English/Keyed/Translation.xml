@@ -1,0 +1,6 @@
+<LanguageData>
+<SafetyWallMissStringSTNL>Miss!</SafetyWallMissStringSTNL>
+<FailedPetrifySTNL>Failed!</FailedPetrifySTNL>
+<VPERAGNAStolenItemSTNL>Stolen {0}!</VPERAGNAStolenItemSTNL>
+<InvalidWarpPortalLocationSTNL>[Error] The warp somehow didn't generate any standable cells, this usually mean that the target's map generator wasn't set correctly. the caster's psyfocus and neural heat have been reset.</InvalidWarpPortalLocationSTNL>
+</LanguageData>

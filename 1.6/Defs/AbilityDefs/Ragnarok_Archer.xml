@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Level 1 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_DoubleStrafeSTNL</defName>
+	<label>Double Strafe</label>
+	<description>Shoots twice at the target by using the current ranged weapon.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Double_Strafe_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_DoubleStrafe</abilityClass>
+	<castSound>VPE_Archer_ef_hit5_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>1</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>20</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 2 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_OwlsEyeSTNL</defName>
+	<label>Passive: Owl's Eye</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nGain a 40% increase in shooting accuracy.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Owl's_Eye_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<chance>0</chance>
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+	<castSound>VPE_Magician_Frost_Diver_ef_frostdiver2_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>26</entropyGain>
+			<prerequisites>
+			<li>VPE_Archer_DoubleStrafeSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Archer_OwlsEyeSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 3 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_VulturesEyeSTNL</defName>
+	<label>Passive: Vulture's Eye</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nGain 20% more range with weapons as well as another 40% bonus to accuracy.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Vulture's_Eye_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<chance>0</chance>
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+	<castSound>VPE_Magician_Frost_Diver_ef_frostdiver2_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>3</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>26</entropyGain>
+			<prerequisites>
+			<li>VPE_Archer_OwlsEyeSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Archer_VulturesEyeSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 4 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_ArrowRepelSTNL</defName>
+	<label>Arrow Repel</label>
+	<description>Shoots the target with a charged shot using the current weapon's projectile, the sheer speed of this projectile will push the target back 4 cells.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Arrow_Repel_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<!-- <chance>0</chance> -->
+	<range>20.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_ArrowRepel</abilityClass>
+	<castSound>VPE_Archer_ef_hit2_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>15</entropyGain>
+			<prerequisites>
+			<li>VPE_Archer_VulturesEyeSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_ArrowShowerSTNL</defName>
+	<label>Arrow Shower</label>
+	<description>Shoots a projectile based on the caster's current weapon that will split into 3 for each target within the radius and push them back 2 cells.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Arrow_Shower_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<!-- <chance>0</chance> -->
+	<range>20.9</range>
+	<radius>2.5</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_ArrowShower</abilityClass>
+	<castSound>VPE_Archer_ef_hit6_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.20</psyfocusCost>
+			<entropyGain>40</entropyGain>
+			<prerequisites>
+			<li>VPE_Archer_VulturesEyeSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 5 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Archer_ImproveConcentrationSTNL</defName>
+	<label>Improve Concentration</label>
+	<description>Boosts ranged attack speed and accuracy temporarily.\n\nOn cast: Will reveal nearby invisible enemies.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Archer/Improve_Concentration_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget> -->
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>2.5</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_ImproveConcentration</abilityClass>
+	<castSound>VPE_Archer_Improve_ac_concentration_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokArcherSTNL</path>
+			<level>5</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+				<li>VPE_Archer_ArrowRepelSTNL</li>
+				<li>VPE_Archer_ArrowShowerSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+</Defs>

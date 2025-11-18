@@ -1,0 +1,795 @@
+<Defs>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_Pushcart1_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/Base/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR1_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarOne/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR2_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarTwo/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR3_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarThree/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -0.8)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR4_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarFour/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR5_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarFive/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR6_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarSix/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR7_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarSeven/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR8_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarEight/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR9_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarNine/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR10_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarTen/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR11_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarEleven/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	<HediffDef>
+		<defName>VPE_Ragna_Merchant_PushcartVAR12_SNTL</defName>
+		<label>Pushcart</label>
+		<description>A pushcart that allows the user to carry more items.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<CarryingCapacity>5</CarryingCapacity>
+					<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+					<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
+					<CarryWeight MayRequire="CETeam.CombatExtended">5</CarryWeight>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPaths>
+					<li>UI_RagnarokSTNL/Cart/VarTwelve/Base</li>
+				</texPaths>
+				<overrideMeshSize>(2.25, 2.25)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>0</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.5, -1)</offset>
+						<!-- <layer>-999</layer> -->
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.5, 0.5)</offset>
+						<!-- <layer>999</layer> -->
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataEast>
+					<dataWest>
+						<offset>(0.65, 0.5, -0.2)</offset>
+						<!-- <layer>998</layer> -->
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+</Defs>

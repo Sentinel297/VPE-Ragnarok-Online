@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Level 1 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_SwordMasterySTNL</defName>
+		<label>Passive: Sword Mastery</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nDeal increased damage with melee attacks.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Sword_Mastery</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>0</entropyGain>
+			</li>
+			<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+				<hediffForPassive>VPE_Ragnarok_Swordsman_SwordMasterySTNL</hediffForPassive>
+				<checkInterval>2500</checkInterval>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 2 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_BashSTNL</defName>
+		<label>Bash</label>
+		<description>Hit an enemy with crushing force, Bash will have a 25% chance to stun the target for 2 seconds.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Bash</iconPath>
+		<castTime>15</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>1.9</distanceToTarget>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Bash</abilityClass>
+		<castSound>VPE_Swordsman_Bash_ef_bash_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.03</psyfocusCost>
+				<entropyGain>15</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_SwordMasterySTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_ProvokeSTNL</defName>
+		<label>Provoke</label>
+		<description>Enrage a single target, greatly reducing its defense while slightly increasing its damage output.\n\n80% success chance.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Provoke</iconPath>
+		<castTime>30</castTime>
+		<durationTime>1800</durationTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<range>9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Provoke</abilityClass>
+		<castSound>VPE_Swordsman_Provoke_swordman_provoke_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>2</level>
+				<order>2</order>
+				<psyfocusCost>0.15</psyfocusCost>
+				<entropyGain>25</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_SwordMasterySTNL</li>
+				</prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+				<effecterDef>VPE_Ragna_Swordsman_Provoke_ALT_STNL</effecterDef>
+				<!-- <onCaster>true</onCaster> -->
+				<!-- <maintainForDuration>true</maintainForDuration> -->
+				<maintainForTicks>60</maintainForTicks>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 3 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_MagnumBreakSTNL</defName>
+		<label>Magnum Break</label>
+		<description>Deal a minor wound to the caster in order to inflict heat damage on nearby enemies and force them backward. The caster's weapon will conjure fiery explosions for 10 seconds after using this ability.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Magnum_Break</iconPath>
+		<castTime>30</castTime>
+		<durationTime>600</durationTime>
+		<targetMode>Self</targetMode>
+		<fleckOnTarget>VPE_Ragna_Swordsman_Magnum_Breack_ALT_STNL</fleckOnTarget>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>5</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_MagnumBreak</abilityClass>
+		<castSound>VPE_Swordsman_MagnumBreak_ef_magnumbreak_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.15</psyfocusCost>
+				<entropyGain>25</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_BashSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_TwoHandedSwordMasterySTNL</defName>
+		<label>Passive: Two Handed Sword Mastery</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nDeal increased damage with melee attacks.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Two-Handed_Sword_Mastery</iconPath>
+		<castTime>30</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>3</level>
+				<order>2</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_SwordMasterySTNL</li>
+				</prerequisites>
+			</li>
+						<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+				<hediffForPassive>VPE_Ragnarok_Swordsman_TwoHandedSwordMasterySTNL</hediffForPassive>
+				<checkInterval>2500</checkInterval>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_EndureSTNL</defName>
+		<label>Endure</label>
+		<description>Endure up to 7 hits, allowing the caster to keep moving and attacking should they be hit, Endure will additionally grant a 10% reduction to any incoming damage.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Endure</iconPath>
+		<castTime>30</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<fleckOnTarget>VPE_Ragna_Swordsman_Endure_STNL</fleckOnTarget>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<castSound>VPE_Swordsman_Endure_ef_endure_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>3</level>
+				<order>3</order>
+				<psyfocusCost>0.07</psyfocusCost>
+				<entropyGain>15</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_ProvokeSTNL</li>
+				</prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<hediff>VPE_Ragnarok_Swordsman_EndureSTNL</hediff>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 4 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_BerserkSTNL</defName>
+		<label>Berserk</label>
+		<description>Suffering from a bleeding wound will enrage the caster, causing them to enter a berserk state and granting them increased attack at the cost of suffering more damage from hits.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Berserk</iconPath>
+		<castTime>30</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Berserk</abilityClass>
+		<castSound>VPE_Swordsman_Berserk_abc_frenzy_shot_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.07</psyfocusCost>
+				<entropyGain>15</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_MagnumBreakSTNL</li>
+					<li>VPE_Swordsman_TwoHandedSwordMasterySTNL</li>
+				</prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<hediff>VPE_Ragnarok_Swordsman_BerserkOnHoldSTNL</hediff>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_HPRecoverySTNL</defName>
+		<label>Passive: Increase HP recovery</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nEnhance natural HP recovery, health regeneration will not happen if the caster is moving.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/Increase_HP_Recovery</iconPath>
+		<castTime>30</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>4</level>
+				<order>2</order>
+				<psyfocusCost>0.20</psyfocusCost>
+				<entropyGain>27</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_TwoHandedSwordMasterySTNL</li>
+					<li>VPE_Swordsman_EndureSTNL</li>
+				</prerequisites>
+			</li>
+						<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+				<hediffForPassive>VPE_Ragnarok_Swordsman_HealingNoMoveSTNL</hediffForPassive>
+				<checkInterval>2500</checkInterval>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 5 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Swordsman_HPRecoveryWhileMovingSTNL</defName>
+		<label>Passive: HP Recovery While Moving</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllow the caster to regenerate health while moving at a lower rate than while standing still.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Swordsman/HP_Recovery_While_Moving</iconPath>
+		<castTime>30</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokSwordsmanSTNL</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.20</psyfocusCost>
+				<entropyGain>27</entropyGain>
+				<prerequisites>
+					<li>VPE_Swordsman_HPRecoverySTNL</li>
+				</prerequisites>
+			</li>
+						<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+				<hediffForPassive>VPE_Ragnarok_Swordsman_HealingMoveSTNL</hediffForPassive>
+				<checkInterval>2500</checkInterval>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>

@@ -1,0 +1,162 @@
+<Defs>
+<HediffDef>
+	<defName>VPE_Ragnarok_Merchant_EnhanceWeightSTNL</defName>
+	<label>Enhance Weight</label>
+	<description>This merchant is capable of carrying more items than other people.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<CarryingCapacity>3</CarryingCapacity>
+				<VEF_MassCarryCapacity>3</VEF_MassCarryCapacity>
+				<CarryBulk MayRequire="CETeam.CombatExtended">3</CarryBulk>
+				<CarryWeight MayRequire="CETeam.CombatExtended">3</CarryWeight>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Merchant_DiscountSTNL</defName>
+	<label>Discount</label>
+	<description>This merchant is capable of gaining better prices during trading than other people.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+			<TradePriceImprovement>1.5</TradePriceImprovement>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Merchant_OverchargeSTNL</defName>
+	<label>Overcharge</label>
+	<description>This merchant is capable of gaining even better prices during trading than other people.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+			<TradePriceImprovement>2.5</TradePriceImprovement>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Merchant_CartDecorationSTNL</defName>
+	<label>Cart Decoration</label>
+	<description>This cart has been decorated, it will grant more beauty to the person pushing it and will allow them to recruit prisoners faster.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+			<PawnBeauty>2.5</PawnBeauty>
+			<NegotiationAbility>2</NegotiationAbility>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Merchant_CrazyUproarSTNL</defName>
+	<label>Crazy Uproar</label>
+	<description>This person is being cheered on by a merchant, their attacks will deal increased damage for the duration of this condition.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<statFactors>
+				<VEF_MeleeAttackDamageFactor>1.3</VEF_MeleeAttackDamageFactor>
+				<VEF_RangeAttackDamageFactor>1.3</VEF_RangeAttackDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>18000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+</Defs>

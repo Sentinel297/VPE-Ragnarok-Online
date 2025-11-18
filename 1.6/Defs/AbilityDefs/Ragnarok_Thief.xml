@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- Passive Skill: Unlocking this ability will automatically apply its effect.\n\n -->
+
+	<!-- Level 1 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Thief_StealSTNL</defName>
+		<label>Steal</label>
+		<description>Steal a random item from the target's inventory, once stolen from, the target will gain the "Awareness" condition. Creatures with this condition cannot be stolen from.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Thief/Steal_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>3</distanceToTarget>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Steal</abilityClass>
+		<castSound>VPE_Thief_Steal_ef_steal_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokThiefSTNL</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>0</entropyGain>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 2 -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_Passive_DoubleAttackSTNL</defName>
+	<label>Passive: Double Attack</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will have a 70% chance to land an additional hit when using melee attacks. Additionally increases melee attack speed by 10%.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Double_Attack_scaled_5x_pngcrushed</iconPath>
+	<castTime>10</castTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<chance>0</chance>
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveDoubleHit</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_StealSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_HidingSTNL</defName>
+	<label>Hiding</label>
+	<description>Conceals the caster to avoid enemies, Hiding will end once the duration runs out or psyfocus reaches 0%.\n\nRecasting while active will end the skill early.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Hiding_scaled_5x_pngcrushed</iconPath>
+	<castTime>10</castTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Hiding</abilityClass>
+	<castSound>VPE_Thief_Hiding_ef_hiding_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_StealSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_EnvenomSTNL</defName>
+	<label>Envenom</label>
+	<description>Coats the weapon in poison and strikes the target, has a 50% chance to inflict the target with a deadly poison. Cannot poison creatures that are immune to toxins.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Envenom_scaled_5x_pngcrushed</iconPath>
+	<castTime>10</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>1.9</distanceToTarget>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Envenom</abilityClass>
+	<castSound>VPE_Thief_Envenom_thief_invenom_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_StealSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 3 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_Passive_IncreasedFleeSTNL</defName>
+	<label>Passive: Increased Flee</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will obtain an increase of 50% to their melee dodge chance. They will additionally gain a 10% increase to movement speed.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Improve_Dodge_scaled_5x_pngcrushed</iconPath>
+	<castTime>10</castTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<chance>0</chance>
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveFleeRate</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>3</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+				<li>VPE_Thief_Passive_DoubleAttackSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_SandAttackSTNL</defName>
+	<label>Sand Attack</label>
+	<description>Hurls sand at the target, dealing 10 blunt damage. \n\nHas a 10% chance to stun the target for 10 seconds.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Sand_Attack_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+		<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_SandAttack</abilityClass>
+	<castSound>VPE_Thief_Sand_Attack_blind_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>3</level>
+			<order>2</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>9</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_Passive_DoubleAttackSTNL</li>
+			<li>VPE_Thief_EnvenomSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_DetoxifySTNL</defName>
+	<label>Detoxify</label>
+	<description>Cures a single target from venom and toxic buildup.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Detoxify_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+		<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Detoxify</abilityClass>
+	<castSound>VPE_Thief_Detoxify_ef_detoxication_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>3</level>
+			<order>3</order>
+			<psyfocusCost>0.08</psyfocusCost>
+			<entropyGain>15</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_EnvenomSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 4 -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_BackSlideSTNL</defName>
+	<label>Back Slide</label>
+	<description>Allows the caster to instantly slide to any cell within the range of this ability.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Back_Slide_scaled_5x_pngcrushed</iconPath>
+	<castTime>5</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<!-- <canTargetItems>true</canTargetItems> -->
+		<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<cooldownTime>60</cooldownTime>
+		<range>4.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_BackSlide</abilityClass>
+	<castSound>VPE_Thief_Back_Slide_SS_HITOUAKUMU_00_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>9</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_Passive_IncreasedFleeSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_FindStoneSTNL</defName>
+	<label>Find Stone</label>
+	<description>Pick up a small stone from the ground.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Find_Stone_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+		<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_FindStone</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>9</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_SandAttackSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 5 -->
+
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Thief_StoneFlingSTNL</defName>
+	<label>Stone Fling</label>
+	<description>Fling one of the carried stone to the target, dealing 15 points of damage.\n\nHas a 5% chance to stun the target for 15 seconds.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Thief/Stone_Fling_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Pawn</targetMode>
+	<!-- <chance>0</chance> -->
+		<range>6.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_StoneFling</abilityClass>
+	<castSound>VPE_Thief_Stone_Fling_monster_stone_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokThiefSTNL</path>
+			<level>5</level>
+			<order>1</order>
+			<psyfocusCost>0.03</psyfocusCost>
+			<entropyGain>9</entropyGain>
+			<prerequisites>
+			<li>VPE_Thief_FindStoneSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+</Defs>

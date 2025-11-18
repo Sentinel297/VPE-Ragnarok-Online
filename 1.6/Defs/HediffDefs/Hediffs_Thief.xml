@@ -1,0 +1,186 @@
+<Defs>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_AwarenessSTNL</defName>
+	<label>Awareness</label>
+	<description>This creature cannot be stolen from.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>30000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_HidingSTNL</defName>
+	<label>Hiding</label>
+	<description>This person is concealing themselves to avoid enemies.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Hiding</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>18000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_Invisibility">
+			<recoverFromDisruptedTicks>1</recoverFromDisruptedTicks>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_DoubleAttackSTNL</defName>
+	<label>Double Attack</label>
+	<description>This person has a 70% chance to inflict two hits instead of one when fighting with melee weapons.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_DoubleAttackPassive</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<statFactors>
+		<MeleeCooldownFactor>0.90</MeleeCooldownFactor>
+		</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>18000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_DodgePassiveSTNL</defName>
+	<label>Increased Flee Rate</label>
+	<description>This thief will have a better chance at avoiding melee attacks than other people, they also will gain a slight increase to their movement speed.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		<statFactors>
+		<MeleeDodgeChance>1.5</MeleeDodgeChance>
+		</statFactors>
+		<capMods>
+		<li>
+		<capacity>Moving</capacity>
+		<postFactor>1.10</postFactor>
+		</li>
+		</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>18000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_EnvenomSTNL</defName>
+	<label>Venom</label>
+	<description>This person is suffering from a deadly toxin.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Envenom</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0, 0.7, 0)</defaultLabelColor>
+	<makesSickThought>True</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>True</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>600</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Ragnarok_Thief_FoundStoneSTNL</defName>
+	<label>Carrying Stone</label>
+	<description>This person is carrying small stones.</description>
+	<hediffClass>VPE_Ragnarok.Hediff_Stone</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>10</maxSeverity>
+	<!-- <lethalSeverity>1</lethalSeverity> -->
+	<defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>600</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+		<!-- </li> -->
+	</comps>
+</HediffDef>
+</Defs>

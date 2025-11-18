@@ -1,0 +1,88 @@
+<Defs>
+<SoundDef>
+	<defName>VPE_Swordsman_Bash_ef_bash_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Swordsman/Bash_ef_bash</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Swordsman_Berserk_abc_frenzy_shot_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Swordsman/Berserk_abc_frenzy_shot</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Swordsman_Endure_ef_endure_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Swordsman/Endure_ef_endure</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Swordsman_MagnumBreak_ef_magnumbreak_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Swordsman/MagnumBreak_ef_magnumbreak</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Swordsman_Provoke_swordman_provoke_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Swordsman/Provoke_swordman_provoke</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+
+</Defs>

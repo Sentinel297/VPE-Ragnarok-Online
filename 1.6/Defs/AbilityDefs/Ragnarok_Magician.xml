@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Level 1 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_FrostDiverSTNL</defName>
+	<label>Frost Diver</label>
+	<description>Inflicts frostbite damage to the target and has a 65% chance to freeze the target for 20 seconds.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Frost_Diver</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<fleckOnTarget>VPE_Ragna_Magician_FrostDiverSTNL</fleckOnTarget>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_FrostDiver</abilityClass>
+	<castSound>VPE_Magician_Frost_Diver_ef_frostdiver2_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>26</entropyGain>
+			<prerequisites>
+				<li>VPE_Magician_ColdBoltSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_NapalmBeatSTNL</defName>
+	<label>Napalm Beat</label>
+	<description>Strike multiple enemies with psychokinetic energy to inflict psychic damage to all enemies within the area of effect, every target in the AoE will take equal damage.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Napalm_Beat</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>2.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Napalm</abilityClass>
+	<castSound>VPE_Magician_Napalm_Beat_ef_napalmbeat_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>18</entropyGain>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_ThunderstormSTNL</defName>
+	<label>Thunder Storm</label>
+	<description>Conjure a large pillar of lightning to strike the target area.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Thunderstorm</iconPath>
+	<castTime>90</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>4.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Thunderstorm</abilityClass>
+	<castSound>VPE_Magician_Thunderstorm_ef_thunderstorm_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>1</level>
+			<order>3</order>
+			<psyfocusCost>0.15</psyfocusCost>
+			<entropyGain>74</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_LightningBoltSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 2 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_ColdBoltSTNL</defName>
+	<label>Cold Bolt</label>
+	<description>Strike an enemy with up to 10 bolts of frigid ice.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Cold_Bolt</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_ColdBolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>2</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>30</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_NapalmBeatSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<ThingDef>
+	<defName>VPE_Ragnarok_Magician_LightningBoltSpawnerSTNL</defName>
+	<label>Charge Anomaly</label>
+	<thingClass>VPE_Ragnarok.LightningBoltSpawner</thingClass>
+	<category>Gas</category>
+	<altitudeLayer>Gas</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		<drawSize>1.5</drawSize>
+		<color>(1, 1, 1, 1)</color>
+	</graphicData>
+	<comps>
+		<!-- <li Class="CompProperties_DestroyAfterDelay"> -->
+			<!-- <delayTicks>840</delayTicks> -->
+		<!-- </li> -->
+		<!-- <li Class="CompProperties_Effecter"> -->
+			<!-- <effecterDef>VPE_Magician_FirewallSTNL</effecterDef> -->
+		<!-- </li> -->
+	</comps>
+</ThingDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_SightSTNL</defName>
+	<label>Sight</label>
+	<description>Summon an orb of fire that will orbit around the caster to reveal every invisible creature within the area of effect.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Sight</iconPath>
+	<durationTime>600</durationTime>
+	<castTime>30</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>7</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<castSound>VPE_Magician_Sight_ef_sight_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.06</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_NapalmBeatSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_Ragnarok_Magician_SightSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_LightningBoltSTNL</defName>
+	<label>Lightning Bolt</label>
+	<description>Call forth up to 10 bolts of lightning from the skies to strike at the target location.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Lightning_Bolt</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Thunderbolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>18</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_NapalmBeatSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 3 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_FireBoltSTNL</defName>
+	<label>Fire Bolt</label>
+	<description>Attack an enemy with up to 10 fiery bolts to set them ablaze.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Bolt</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_FlameBolt</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>3</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_NapalmBeatSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_IncreaseSPRecoverySTNL</defName>
+	<label>Passive: Increase SP recovery</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nEnhance Psyfocus recovery, 10% of the caster's psyfocus will be recharged after standing still for 10 seconds.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Increase_SP_Recovery</iconPath>
+	<durationTime>600</durationTime>
+	<castTime>30</castTime>
+	<targetMode>Self</targetMode>
+	<chance>0</chance>
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>3</level>
+			<order>3</order>
+			<psyfocusCost>0.06</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+				<li>VPE_Magician_NapalmBeatSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Magician_IncSPRecovSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 4 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_FireBallSTNL</defName>
+	<label>Fire Ball</label>
+	<description>Calls forth a fireball to inflict flame damage to all enemies within the area of effect.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Ball</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>5</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>25</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_FireBoltSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Projectile">
+			<projectile>VPE_Flameball_Ragna_STNL</projectile>
+			<forcedMissRadius>0.01</forcedMissRadius>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<ThingDef ParentName="BaseBullet">
+	<defName>VPE_Flameball_Ragna_STNL</defName>
+	<label>flameball</label>
+	<description>.</description>
+	<thingClass>Projectile_Explosive</thingClass>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/firetexb</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>MoteGlow</shaderType>
+		<drawSize>(2,2)</drawSize>
+	</graphicData>
+	<drawOffscreen>true</drawOffscreen>
+	<drawerType>RealtimeOnly</drawerType>
+	<projectile>
+		<explosionRadius>5</explosionRadius>
+		<damageAmountBase>17</damageAmountBase>
+		<damageDef>Flame</damageDef>
+		<speed>75</speed>
+		<arcHeightFactor>0</arcHeightFactor>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<shadowSize>0.6</shadowSize>
+	</projectile>
+</ThingDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_StoneCurseSTNL</defName>
+	<label>Stone Curse</label>
+	<description>Attempt to petrify a single target. Stone curse has a 60% chance to succeed and will last for a day on success.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Stone_Curse</iconPath>
+	<castTime>80</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_StoneCurse</abilityClass>
+	<castSound>VPE_Magician_Stone_Curse_ef_stonecurse_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>16</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_FirewallSTNL</li>
+			<li>VPE_Magician_SafetyWallSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_EnergyCoatSTNL</defName>
+	<label>Energy Coat</label>
+	<description>Convert the caster's current psyfocus into a low-energy shield, the effectiveness of this shield will depend on the current amount of the caster's focus.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Energy_Coat</iconPath>
+	<durationTime>18000</durationTime>
+	<castTime>300</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<castSound>VPE_Magician_Energy_Coat_sage_magicrod_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>4</level>
+			<order>3</order>
+			<psyfocusCost>0.06</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_IncreaseSPRecoverySTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_Ragnarok_Magician_EnergyCoatSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 5 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_FirewallSTNL</defName>
+	<label>Fire Wall</label>
+	<description>Creates a wall of flame on a target location that will inflict 10 points of fire damage and push back anyone that attempts to pass through.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Fire_Wall</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Firewall</abilityClass>
+	<castSound>VPE_Magician_Fire_Wall_ef_firewall_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>5</level>
+			<order>1</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>25</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_FireBallSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Fire wall thing -->
+
+
+
+<ThingDef>
+	<defName>VPE_Ragnarok_Magician_FireWallSTNL</defName>
+	<label>Fire Wall</label>
+	<thingClass>VPE_Ragnarok.FireWallMage</thingClass>
+	<category>Gas</category>
+	<altitudeLayer>Gas</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		<drawSize>1.5</drawSize>
+		<color>(1, 1, 1, 1)</color>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_DestroyAfterDelay">
+			<delayTicks>840</delayTicks>
+		</li>
+		<li Class="CompProperties_Effecter">
+			<effecterDef>VPE_Magician_FirewallSTNL</effecterDef>
+		</li>
+	</comps>
+</ThingDef>
+
+
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Magician_SafetyWallSTNL</defName>
+	<label>Safety Wall</label>
+	<description>Creates a pink light pillar on a targeted location that prevents anyone inside from taking damage from melee attacks.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Magician/Safety_Wall</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_SafetyWall</abilityClass>
+	<castSound>VPE_Magician_Safety_Wall_ef_glasswall_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokMagicianSTNL</path>
+			<level>5</level>
+			<order>3</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>40</entropyGain>
+			<prerequisites>
+			<li>VPE_Magician_EnergyCoatSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Safety Wall -->
+
+  <ThingDef Name="VPE_RagnarokSafetyWallSTNL" Abstract="True">
+    <thingClass>VPE_Ragnarok.SafetyWall</thingClass>
+    <label>Safety Wall</label>
+    <category>Gas</category>
+    <altitudeLayer>Gas</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="VPE_RagnarokSafetyWallSTNL">
+	<defName>VPE_Ragnarok_Magician_SafetyWallThingSTNL</defName>
+	<label>Safety Wall</label>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/None</texPath>
+		<drawSize>1.5</drawSize>
+		<color>(1, 1, 1, 1)</color>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_DestroyAfterDelay">
+			<delayTicks>1800</delayTicks>
+		</li>
+		<li Class="CompProperties_Effecter">
+			<effecterDef>VPE_Magician_SafetywallSTNL</effecterDef>
+		</li>
+	</comps>
+</ThingDef>
+
+
+</Defs>

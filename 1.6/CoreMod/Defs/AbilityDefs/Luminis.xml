@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!-- Level 1 -->
+    
+	<ThingDef ParentName="EtherealThingBase">
+    <defName>VPE_GreaterSolarPinholeSTNL</defName>
+    <label>Greater solar pinhole</label>
+    <thingClass>ThingWithComps</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <category>PsychicEmitter</category>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+	<selectable>true</selectable>
+	    <building>
+      <isInert>true</isInert>
+      <claimable>true</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Mote/SolarPinhole</texPath>
+      <shaderType>MoteGlowDistorted</shaderType>
+      <color>(255, 255, 245)</color>
+      <drawSize>6</drawSize>
+      <shaderParameters>
+        <_DistortionTex>/Other/Ripples</_DistortionTex>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_DistortionScale>0.4</_DistortionScale>
+        <_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+      </shaderParameters>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>30</glowRadius>
+		<overlightRadius>18</overlightRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>20</heatPerSecond>
+        <heatPushMaxTemperature>60</heatPushMaxTemperature>
+      </li>
+	  <li Class="VPE_Luminis.CompProperties_DestroyGizmo"/>
+    </comps>
+  </ThingDef>
+  
+  <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+    <defName>VPE_GreaterSolarPinholeSTNL</defName>
+    <label>Greater solar pinhole</label>
+    <description>Form a miniature portal directly linked to the nearest star, this pinhole will allow more light to pass through, allowing for plant growth. This portal is large enough to persist and will remain until manually dispersed at the cost of letting out a lot more heat than a standard solar pinhole.</description>
+    <iconPath>UI_LuminisSTNL/Abilities/Luminis/GreaterSolarPinhole</iconPath>
+    <abilityClass>VEF.Abilities.Ability_Spawn</abilityClass>
+    <needsTicking>true</needsTicking>
+    <castTime>15</castTime>
+    <durationTime>30000</durationTime>
+    <radius>29.9</radius>
+    <range>24.9</range>
+    <targetMode>Location</targetMode>
+    <showUndrafted>true</showUndrafted>
+    <chance>0</chance>
+    <modExtensions>
+      <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+        <path>VPE_LuminisSTNL</path>
+        <level>1</level>
+        <order>1</order>
+        <psyfocusCost>0.25</psyfocusCost>
+        <entropyGain>0</entropyGain>
+      </li>
+      <li Class="VEF.Abilities.AbilityExtension_Spawn">
+        <thing>VPE_GreaterSolarPinholeSTNL</thing>
+      </li>
+      <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>0.42</scale>
+      </li>
+      <li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+        </fleckDefs>
+        <scale>0.6</scale>
+        <sound>Psycast_Skip_Exit</sound>
+        <preCastTicks>5</preCastTicks>
+      </li>
+    </modExtensions>
+  </VEF.Abilities.AbilityDef>
+  
+   <!-- Level 2 -->
+   
+  <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+    <defName>VPE_BlindingFlashSTNL</defName>
+    <label>Blinding flash</label>
+    <description>Generate a bright explosion of light that will temporarily blind and disorient the targets, stunning them for a few seconds as their vision returns to normal. \n\nDuration of the stun scales with psychic sensitivity.</description>
+    <iconPath>UI_LuminisSTNL/Abilities/Luminis/BlindingFlash</iconPath>
+    <abilityClass>VPE_Luminis.Ability_BlindingFlash</abilityClass>
+    <needsTicking>true</needsTicking>
+    <castTime>30</castTime>
+	<castSound>PsycastPsychicPulse</castSound>
+    <durationTime>120</durationTime>
+	<durationTimeStatFactors>
+	<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+    <radius>5.9</radius>
+    <range>24.9</range>
+    <targetMode>Location</targetMode>
+    <showUndrafted>false</showUndrafted>
+    <chance>1</chance>
+    <modExtensions>
+      <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+        <path>VPE_LuminisSTNL</path>
+        <level>2</level>
+        <order>2</order>
+        <psyfocusCost>0.04</psyfocusCost>
+        <entropyGain>10</entropyGain>
+		<prerequisites>
+		<li>VPE_GreaterSolarPinholeSTNL</li>
+		</prerequisites>
+      </li>
+    </modExtensions>
+  </VEF.Abilities.AbilityDef>
+  
+
+  
+  <!-- Level 3 -->
+  
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_FlashSkipSTNL</defName>
+	<label>Flash skip</label>
+	<description>Turn yourself into a beam of light and dash to the target location, any creature caught in the radius will become stunned for a short time.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/FlashSkip</iconPath>
+	<abilityClass>VPE_Luminis.Ability_FlashSkip</abilityClass>
+	<needsTicking>true</needsTicking>
+	<castTime>15</castTime>
+	<castSound>PsycastPsychicPulse</castSound>
+	<durationTime>120</durationTime>
+	<radius>5.9</radius>
+	<range>30.9</range>
+	<targetMode>Location</targetMode>
+	<showUndrafted>false</showUndrafted>
+	<chance>0</chance>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.06</psyfocusCost>
+			<entropyGain>15</entropyGain>
+			<prerequisites>
+				<li>VPE_BlindingFlashSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_SavingLightSTNL</defName>
+	<label>Saving light</label>
+	<description>Form bandages made out of pure light around the target's wounds to tend them.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SavingLight</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<chance>0</chance>
+	<radius>0</radius>
+	<range>14.9</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Luminis.Ability_SavingLight</abilityClass>
+	<castSound>Psycast_WordOf_Effect</castSound>
+	<fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>True</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>3</level>
+			<order>2</order>
+			<psyfocusCost>0.13</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+				<li>VPE_BlindingFlashSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+	<!-- Level 4 -->
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_SolarFlareSTNL</defName>
+	<label>Solar flare</label>
+	<description>Provoke a solar eruption in a nearby star and redirect the electromagnetic radiation to the local area, disabling electronics for a day.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SolarFlare</iconPath>
+	<showUndrafted>true</showUndrafted>
+	<durationTime>60000</durationTime>
+	<durationTimeStatFactors>
+	<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<castTime>120</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<radius>0</radius>
+	<range>0</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>SentinelFramework_STNL.Ability_ForceCondition</abilityClass>
+	<castSound>Psycast_Neuroquake_Effect</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.30</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+				<li>VPE_SavingLightSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="SentinelFramework_STNL.AbilityForceCondiExt">
+			<conditionDef>SolarFlare</conditionDef>
+			<global>false</global>
+			<scaleDuraWithSensi>True</scaleDuraWithSensi>
+			<aiCanUse>false</aiCanUse>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_SolarRiftSTNL</defName>
+	<label>Solar rift</label>
+	<description>Create a massive rift in the sky that is directly connected to the sun, the rift will allow sunlight to pass through, resulting in global daytime.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SolarRift</iconPath>
+	<showUndrafted>true</showUndrafted>
+	<castTime>180</castTime>
+	<durationTime>60000</durationTime>
+	<durationTimeStatFactors>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<radius>0</radius>
+	<range>0</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>SentinelFramework_STNL.Ability_ForceCondition</abilityClass>
+	<castSound>VPE_SeasonTimeskip_Cast</castSound>
+	<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+	<targetingParameters>
+		<canTargetLocations>True</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>False</canTargetAnimals>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>False</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.50</psyfocusCost>
+			<entropyGain>30</entropyGain>
+			<prerequisites>
+				<li>VPE_SavingLightSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="SentinelFramework_STNL.AbilityForceCondiExt">
+			<conditionDef>VPE_SolarRiftSTNL</conditionDef>
+			<global>false</global>
+			<scaleDuraWithSensi>True</scaleDuraWithSensi>
+			<aiCanUse>true</aiCanUse>
+			<fleckDef>PsycastSkipFlashEntry</fleckDef>
+			<fleckSize>999</fleckSize>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_EnlightenSTNL</defName>
+	<label>Enlighten</label>
+	<description>Psychically grant greater learning capabilities as well as increased consciousness and psychic sensitivity to the target for a day.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/Enlighten</iconPath>
+	<castTime>30</castTime>
+	<durationTime>60000</durationTime>
+	<targetMode>Pawn</targetMode>
+	<chance>0</chance>
+	<radius>0</radius>
+	<range>14.9</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>True</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>4</level>
+			<order>3</order>
+			<psyfocusCost>0.10</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+				<li>VPE_SavingLightSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_EnlightenementSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_RadiantBeaconSTNL</defName>
+	<label>Radiant beacon</label>
+	<description>Release pulses of soothing psychic energy every half second, these pulses will heal nearby allies while prioritizing bleeding wounds.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/RadiantBeacon</iconPath>
+	<castTime>60</castTime>
+	<durationTime>1200</durationTime>
+	<durationTimeStatFactors>
+	<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<targetMode>Self</targetMode>
+	<chance>0</chance>
+	<radius>5</radius>
+	<range>0</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetAnimals>False</canTargetAnimals>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>False</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>2</level>
+			<order>1</order>
+			<psyfocusCost>0.30</psyfocusCost>
+			<entropyGain>20</entropyGain>
+			<prerequisites>
+				<li>VPE_SavingLightSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_RadiantBeaconSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+	
+	<!-- Level 5 -->
+	
+	<ThingDef ParentName="OrbitalStrikeBase">
+    <defName>LuminisSolarBeamSTNL</defName>
+    <label>Sun beam</label>
+    <thingClass>VPE_Luminis.LuminisSolarBeamSTNL</thingClass>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>8</width>
+        <color>(255, 245, 214, 242)</color>
+        <sound>OrbitalBeam</sound>
+      </li>
+      <li Class="CompProperties_CameraShaker">
+        <mag>0.03</mag>
+      </li>
+      <li Class="CompProperties_AffectsSky">
+        <skyColors>
+          <sky>(255, 230, 200)</sky>
+          <shadow>(225, 220, 185)</shadow>
+          <overlay>(255, 255, 255)</overlay>
+          <saturation>1.3</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_SunBeamSTNL</defName>
+	<label>Sun beam</label>
+	<description>Form a controlled massive solar eruption at the target location to scorch the area.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SunBeam</iconPath>
+	<castTime>120</castTime>
+	<durationTime>900</durationTime>
+	<targetMode>Location</targetMode>
+	<chance>0</chance>
+	<radius>14.9</radius>
+	<range>50.9</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Luminis.Ability_SunBeam</abilityClass>
+	<castSound>VPE_FireBeam_Cast</castSound>
+	<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+	<targetingParameters>
+		<canTargetLocations>True</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>False</canTargetAnimals>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>False</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>5</level>
+			<order>2</order>
+			<psyfocusCost>0.49</psyfocusCost>
+			<entropyGain>70</entropyGain>
+			<prerequisites>
+				<li>VPE_SolarRiftSTNL</li>
+				<li>VPE_EnlightenSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 6 -->
+	
+    	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_FurariLuminisSTNL</defName>
+		<label>Furari luminis</label>
+		<description>Absorb the light of the world and convert it into pure energy to massively empower yourself for a short time, the world will become void of natural light for a day following the use of this ability. Furari Luminis will be unavailable during this time.</description>
+		<iconPath>UI_LuminisSTNL/Abilities/Luminis/FurariLuminis</iconPath>
+		<castTime>120</castTime>
+		<durationTime>60000</durationTime> 
+		<targetMode>Self</targetMode>
+		<chance>0</chance>
+		<radius>0</radius>
+		<range>0</range>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Luminis.Ability_FurariLuminis</abilityClass>
+		<castSound>Psycast_Neuroquake_Effect</castSound>
+		<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>False</canTargetAnimals>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetHumans>False</canTargetHumans>
+			<canTargetMechs>False</canTargetMechs>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_LuminisSTNL</path>
+				<level>6</level>
+				<order>3</order>
+				<psyfocusCost>0.60</psyfocusCost>
+				<entropyGain>150</entropyGain>
+				<prerequisites>
+				<li>VPE_SunBeamSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_ApocalypsisLuminisSTNL</defName>
+		<label>Apocalypsis luminis</label>
+		<description>Absorb the light of the world and unleash it in the form of a devastating cataclysm, the world will become void of natural light for a day following the use of this ability. Apocalypsis Luminis will be unavailable during this time.</description>
+		<iconPath>UI_LuminisSTNL/Abilities/Luminis/ApocalypsisLuminis</iconPath>
+		<castTime>200</castTime>
+		<durationTime>60000</durationTime> 
+		<targetMode>Location</targetMode>
+		<chance>0</chance>
+		<radius>3.9</radius>
+		<range>50.9</range>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Luminis.Ability_ApocalypsisLuminis</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+		<targetingParameters>
+			<canTargetLocations>True</canTargetLocations>
+			<canTargetSelf>False</canTargetSelf>
+			<canTargetAnimals>False</canTargetAnimals>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetHumans>False</canTargetHumans>
+			<canTargetMechs>False</canTargetMechs>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_LuminisSTNL</path>
+				<level>6</level>
+				<order>2</order>
+				<psyfocusCost>0.80</psyfocusCost>
+				<entropyGain>200</entropyGain>
+				<prerequisites>
+				<li>VPE_SunBeamSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 7 -->
+	
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_UltimaLuminisSTNL</defName>
+	<label>Ultima luminis</label>
+	<description>Absorb the light of the universe and annihilate the target area with a super-massive cataclysm of pure light capable of destroying even heat resisting creatures, the universe will become void of natural light for a quadrum following the use of this ability. Ultima Luminis will be unavailable during this time.\n\nSolar pinholes will fail for the duration of this condition.</description>
+	<iconPath>UI_LuminisSTNL/Abilities/Luminis/UltimaLuminis</iconPath>
+	<castTime>200</castTime>
+	<durationTime>900000</durationTime>
+	<targetMode>Location</targetMode>
+	<chance>0</chance>
+	<radius>15.9</radius>
+	<range>50.9</range>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Luminis.Ability_UltimaLuminis</abilityClass>
+	<castSound>Explosion_Thump</castSound>
+	<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+	<targetingParameters>
+		<canTargetLocations>True</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>False</canTargetAnimals>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>False</canTargetMechs>
+	</targetingParameters>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_LuminisSTNL</path>
+			<level>7</level>
+			<order>2</order>
+			<psyfocusCost>0.80</psyfocusCost>
+			<entropyGain>500</entropyGain>
+			<prerequisites>
+				<li>VPE_ApocalypsisLuminisSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_AeternaLuminisSTNL</defName>
+		<label>Aeterna luminis</label>
+		<description>Absorb the light of the universe and convert it into pure energy to reach a state of near immortality, the universe will become void of natural light for as long as the caster maintains their hold over it.\n\nSolar pinholes will fail for the duration of this condition.</description>
+		<iconPath>UI_LuminisSTNL/Abilities/Luminis/AeternaLuminis</iconPath>
+		<castTime>120</castTime>
+		<targetMode>Self</targetMode>
+		<chance>0</chance>
+		<radius>0</radius>
+		<range>0</range>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Luminis.Ability_AeternaLuminis</abilityClass>
+		<castSound>Psycast_Neuroquake_Effect</castSound>
+		<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>False</canTargetAnimals>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetHumans>False</canTargetHumans>
+			<canTargetMechs>False</canTargetMechs>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_LuminisSTNL</path>
+				<level>7</level>
+				<order>3</order>
+				<psyfocusCost>0.80</psyfocusCost>
+				<entropyGain>4700</entropyGain>
+				<prerequisites>
+				<li>VPE_FurariLuminisSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>

@@ -1,0 +1,240 @@
+<Defs>
+	<HediffDef>
+		<defName>VPE_RadiantBeaconSTNL</defName>
+		<label>Radiant beacon</label>
+		<description>This person is emitting soothing pulses of light that will heal nearby allies.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<makesSickThought>False</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VPE_Luminis.HediffCompProperties_RadiantBeacon">
+			<healRadius>5</healRadius>
+			<healInterval>30</healInterval>
+			<healAmount>2.5</healAmount>
+			</li>
+		</comps>
+		<stages>
+			<li>
+		</li>
+		</stages>
+	</HediffDef>
+	
+<HediffDef>
+	<defName>VPE_EnlightenementSTNL</defName>
+	<label>Enlightenment</label>
+	<description>This creature is being psychically enlightened by a Luminis psycaster, they will gain faster overall knowledge and psychic influence over others.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>10000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>1.5</postFactor>
+				</li>
+			</capMods>
+			<statFactors>
+				<GlobalLearningFactor>2</GlobalLearningFactor>
+				<PsychicSensitivity>2</PsychicSensitivity>
+			</statFactors>
+		</li>
+	</stages>
+</HediffDef>
+
+<ThingDef>
+	<defName>LightOfExtinctionLightSTNL</defName>
+	<label>Light of extinction</label>
+	<thingClass>VPE_Luminis.LightOfExtinction</thingClass>
+	<graphicData>
+		<texPath>UI_LuminisSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<selectable>false</selectable>
+	<tickerType>Normal</tickerType>
+	<comps>
+		<li Class="CompProperties_Glower">
+		    <glowRadius>20</glowRadius>
+			<overlightRadius>10</overlightRadius>
+			<glowColor>(255,255,255,0)</glowColor>
+		</li>
+	</comps>
+</ThingDef>
+
+<HediffDef>
+	<defName>VPE_LightOfTheWorldSTNL</defName>
+	<label>Light of extinction</label>
+	<description>This person has stolen light from the world and is converting it into pure energy to reach a temporary state of unprecedented power, greatly enhancing their capabilities for a short duration.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>10000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Effecter">
+			<stateEffecter>VPE_SparksYellow</stateEffecter>
+		</li>
+		<li Class="VPE_Luminis.HediffCompProperties_Glower">
+			<lightDef>LightOfExtinctionLightSTNL</lightDef>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>10</postFactor>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<postFactor>10</postFactor>
+				</li>
+			</capMods>
+			<statFactors>
+				<ImmunityGainSpeedFactor>10</ImmunityGainSpeedFactor>
+				<InjuryHealingFactor>10</InjuryHealingFactor>
+				<StaggerDurationFactor>0</StaggerDurationFactor>
+				<Flammability>0</Flammability>
+				<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				<PsychicSensitivity>10</PsychicSensitivity>
+				<PsychicEntropyMaxOffset>10</PsychicEntropyMaxOffset>
+				<VPE_PsyfocusCostFactor>0.25</VPE_PsyfocusCostFactor>
+				<PsychicEntropyGain>0.25</PsychicEntropyGain>
+				<RangedCooldownFactor >0.10</RangedCooldownFactor >
+				<MeleeCooldownFactor>0.10</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.10</RangedCooldownFactor>
+				<VEF_MeleeAttackDamageFactor>3</VEF_MeleeAttackDamageFactor>
+				<VEF_RangeAttackDamageFactor>3</VEF_RangeAttackDamageFactor>
+				<WorkSpeedGlobal>10</WorkSpeedGlobal>
+			</statFactors>
+		</li>
+	</stages>
+</HediffDef>
+
+<ThingDef>
+	<defName>EternalLightSTNL</defName>
+	<label>Eternal Light</label>
+	<thingClass>VPE_Luminis.LightOfExtinction</thingClass>
+	<graphicData>
+		<texPath>UI_LuminisSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<tickerType>Normal</tickerType>
+	<selectable>false</selectable>
+	<comps>
+		<li Class="CompProperties_Glower">
+		    <glowRadius>40</glowRadius>
+			<overlightRadius>20</overlightRadius>
+			<glowColor>(255,255,255,255)</glowColor>
+		</li>
+	</comps>
+</ThingDef>
+
+<HediffDef>
+	<defName>VPE_EternalLightSTNL</defName>
+	<label>Eternal Light</label>
+	<description>This person has stolen light from the universe and is converting it into pure energy to reach a temporary state of near immortality, greatly enhancing their capabilities.</description>
+	<hediffClass>VPE_Luminis.Hediff_EternalLight</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<comps>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="HediffCompProperties_Effecter">
+			<stateEffecter>VPE_AeternaLuminisSTNL</stateEffecter>
+		</li>
+		<li Class="VPE_Luminis.HediffCompProperties_Glower">
+			<lightDef>EternalLightSTNL</lightDef>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>100</postFactor>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<postFactor>100</postFactor>
+				</li>
+				<li>
+					<capacity>Breathing</capacity>
+					<postFactor>100</postFactor>
+				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<postFactor>100</postFactor>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<postFactor>100</postFactor>
+				</li>
+			</capMods>
+			<regeneration MayRequire="Ludeon.Rimworld.Anomaly">9999</regeneration>
+			<statFactors>
+				<ImmunityGainSpeedFactor>100</ImmunityGainSpeedFactor>
+				<InjuryHealingFactor>100</InjuryHealingFactor>
+				<StaggerDurationFactor>0</StaggerDurationFactor>
+				<Flammability>0</Flammability>
+				<IncomingDamageFactor>0.02</IncomingDamageFactor>
+				<PsychicSensitivity>100</PsychicSensitivity>
+				<PsychicEntropyMaxOffset>100</PsychicEntropyMaxOffset>
+				<VPE_PsyfocusCostFactor>0.01</VPE_PsyfocusCostFactor>
+				<PsychicEntropyGain>0.01</PsychicEntropyGain>
+				<MeleeCooldownFactor>0.01</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.01</RangedCooldownFactor>
+				<VEF_MeleeAttackDamageFactor>10</VEF_MeleeAttackDamageFactor>
+				<VEF_RangeAttackDamageFactor>10</VEF_RangeAttackDamageFactor>
+				<WorkSpeedGlobal>100</WorkSpeedGlobal>
+			</statFactors>
+			<disablesNeeds>
+				<li>Rest</li>
+				<li>Food</li>
+			</disablesNeeds>
+		</li>
+	</stages>
+</HediffDef>
+</Defs>

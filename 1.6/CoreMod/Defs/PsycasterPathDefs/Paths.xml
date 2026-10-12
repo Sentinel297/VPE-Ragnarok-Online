@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+		<defName>VPE_LuminisSTNL</defName>
+		<label>Luminis</label>
+		<description>Weave the light in the world to manifest various psychic phenomena.</description>
+		<background>UI_LuminisSTNL/Tree/LuminisTreeBase</background>
+		<altBackground>UI_LuminisSTNL/Tree/LuminisTreeBase</altBackground>
+		<tab>Misc</tab>
+		<tooltip>Weave the light in the world to manifest various psychic phenomena.</tooltip>
+	</VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

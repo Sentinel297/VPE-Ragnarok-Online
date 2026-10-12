@@ -1,0 +1,63 @@
+<Defs>
+
+ <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_RadiantPulseSTNL</defName>
+    <graphicData>
+      <texPath>UI_LuminisSTNL/Pawn/RadiantPulse</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Silhouettes</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>1</growthRate>
+  </FleckDef>
+  
+   <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_FurariLuminisSTNL</defName>
+    <graphicData>
+      <texPath>UI_LuminisSTNL/Pawn/FurariLuminis</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Silhouettes</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.6</fadeOutTime>
+    <growthRate>2</growthRate>
+  </FleckDef>
+  
+    <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_AeternaLuminisSTNL</defName>
+    <graphicData>
+      <texPath>UI_LuminisSTNL/Pawn/AeternaLuminis</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(255, 255, 255, 255)</color>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Silhouettes</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.6</fadeOutTime>
+    <growthRate>10</growthRate>
+  </FleckDef>
+
+	<EffecterDef>
+		<defName>VPE_AeternaLuminisSTNL</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<chancePerTick>1</chancePerTick>
+				<positionRadius>1.5</positionRadius>
+				<moteDef>VPE_YellowSparkFlash</moteDef>
+				<speed>0.18~0.18</speed>
+				<rotation>0</rotation>
+				<angle>0~360</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+</Defs>

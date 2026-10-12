@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Solar Rift -->
+
+<GameConditionDef>
+    <defName>VPE_SolarRiftSTNL</defName>
+    <conditionClass>VPE_Luminis.GameCondition_SolarRift</conditionClass>
+    <label>Solar rift</label>
+    <description>A rift connected to the sun is in space, it acts as a second sun.</description>
+    <!-- <weatherDef>VPE_NoctisApocalypsisSTNL</weatherDef> -->
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <allowUnderground>false</allowUnderground>
+  </GameConditionDef>
+  
+ <!-- Noctis Apocalypsis -->
+
+<GameConditionDef>
+    <defName>VPE_NoctisApocalypsisSTNL</defName>
+    <conditionClass>VPE_Luminis.GameCondition_NoctisApocalypsis</conditionClass>
+    <label>Noctis apocalypsis</label>
+    <description>The world's light has been consumed by a Luminis psycaster, light will eventually return after some time.\nSolar Rift will not work as long as this condition is active.</description>
+    <weatherDef>VPE_NoctisApocalypsisSTNL</weatherDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <allowUnderground>false</allowUnderground>
+  </GameConditionDef>
+  
+  <WeatherDef>
+    <defName>VPE_NoctisApocalypsisSTNL</defName>
+    <label>Night of the apocalypse</label>
+    <description>There is no natural light in the world.</description>
+    <snowRate>0</snowRate>
+    <windSpeedFactor>1</windSpeedFactor>
+    <windSpeedOffset>1</windSpeedOffset>
+    <accuracyMultiplier>1</accuracyMultiplier>
+    <favorability>Neutral</favorability>
+    <perceivePriority>1</perceivePriority>
+    <rainRate>0</rainRate>
+    <moveSpeedMultiplier>1</moveSpeedMultiplier>
+    <preventsShuttleLaunch MayRequire="Ludeon.Rimworld.Odyssey">false</preventsShuttleLaunch>
+    <ambientSounds>
+      <li>Ambient_UnnaturalDarkness_Phase2</li>
+    </ambientSounds>
+    <overlayClasses>
+      <li>WeatherOverlay_DeathpallFog</li>
+    </overlayClasses>
+    <!-- Colors are Overcast -->
+    <skyColorsDay>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+  <!-- Last Light -->
+  
+  <GameConditionDef>
+    <defName>VPE_EternalNightSTNL</defName>
+    <conditionClass>VPE_Luminis.GameCondition_LastLight</conditionClass>
+    <label>Aeterna noctis</label>
+    <description>The light of the universe has been depleted, stars are dim and weak, solar pinholes will fail for the duration of this condition.</description>
+    <weatherDef>VPE_EternalNightSTNL</weatherDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <allowUnderground>false</allowUnderground>
+  </GameConditionDef>
+  
+  <WeatherDef>
+    <defName>VPE_EternalNightSTNL</defName>
+    <label>Eternal night</label>
+    <description>There is no natural light in the world.</description>
+    <snowRate>0</snowRate>
+    <windSpeedFactor>1</windSpeedFactor>
+    <windSpeedOffset>1</windSpeedOffset>
+    <accuracyMultiplier>1</accuracyMultiplier>
+    <favorability>Neutral</favorability>
+    <perceivePriority>1</perceivePriority>
+    <rainRate>0</rainRate>
+    <moveSpeedMultiplier>1</moveSpeedMultiplier>
+    <preventsShuttleLaunch MayRequire="Ludeon.Rimworld.Odyssey">false</preventsShuttleLaunch>
+    <ambientSounds>
+      <li>Ambient_UnnaturalDarkness_Phase2</li>
+    </ambientSounds>
+    <overlayClasses>
+      <li>WeatherOverlay_DeathpallFog</li>
+    </overlayClasses>
+    <!-- Colors are Overcast -->
+    <skyColorsDay>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.1,0.1,0.1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+
+</Defs>

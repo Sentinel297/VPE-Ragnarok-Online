@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Level 1 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_PassiveCarryWeightSTNL</defName>
+		<label>Passive: Carry Weight Increase</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nIncreases carry weight and caravan mass carrying capacity by 3 times the normal amount.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Enlarge_Weight_Limit_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_PassiveWeight</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>0</entropyGain>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 2 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_DiscountSTNL</defName>
+		<label>Passive: Discount</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllows this person to get better prices while trading.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Discount_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<chance>0</chance>
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Discount</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.00</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_PassiveCarryWeightSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_PushCartSTNL</defName>
+		<label>Pushcart</label>
+		<description>Allows the caster to summon a pushcart that will further increase their carrying capacity.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Pushcart_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Pushcart</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.1</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_PassiveCarryWeightSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 3 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_OverchargeSTNL</defName>
+		<label>Passive: Overcharge</label>
+		<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nAllows this person to get even better prices while trading.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Overcharge_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Overcharge</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.00</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_DiscountSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_ChangePushCartSTNL</defName>
+		<label>Change Pushcart Appearance</label>
+		<description>Changes the appearance of the pushcart.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Change_Cart_scaled_5x_pngcrushed</iconPath>
+		<castTime>0</castTime>
+		<cooldownTime>0</cooldownTime>
+		<targetMode>Self</targetMode>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_ChangePushcart</abilityClass>
+		<castSound>PsycastPsychicPulse</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.0</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_PushCartSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 4 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_RepairItemSTNL</defName>
+		<label>Repair</label>
+		<description>Fully repair everything within the target's inventory.\n\nMay also be used to repair mechanoids.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/ALT_Weapon_Repair_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>1.9</distanceToTarget>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Repair</abilityClass>
+		<castSound>VPE_Merchant_ALT_Weapon_Repair_bs_refinesuccess_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.10</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_OverchargeSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_CrazyUproarSTNL</defName>
+		<label>Crazy Uproar</label>
+		<description>Shout loudly to increase every allies' attack power.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Crazy_Uproar_scaled_5x_pngcrushed</iconPath>
+		<durationTime>18000</durationTime>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>13.9</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_CrazyUproar</abilityClass>
+		<castSound>VPE_Merchant_Crazy_Uproar_고성방가_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>4</level>
+				<order>2</order>
+				<psyfocusCost>0.08</psyfocusCost>
+				<entropyGain>8</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_OverchargeSTNL</li>
+					<li>VPE_Merchant_ChangePushCartSTNL</li>
+				</prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+				<effecterDef>VPE_Ragna_Merchant_Crazy_Uproar_STNL</effecterDef>
+				<onCaster>true</onCaster>
+				<!-- <maintainForDuration>true</maintainForDuration> -->
+				<maintainForTicks>1</maintainForTicks>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_DecorateCartSTNL</defName>
+		<label>Decorate Cart</label>
+		<description>Decorate the current cart, this will cause the caster to gain increased beauty and prisoner recruitment efficiency.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Cart_Decoration_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<!-- <chance>0</chance> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_DecorateCart</abilityClass>
+		<castSound>VPE_Merchant_Cart_Decoration_rl_b_trap_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>4</level>
+				<order>3</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>30</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_ChangePushCartSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<!-- Level 5 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_MammoniteSTNL</defName>
+		<label>Mammonite</label>
+		<description>Substracts 1k silver from the caster's inventory to strike the target with the power of greed, instantly killing them.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Mammonite_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>1</distanceToTarget>
+		<radius>13.9</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_Mammonite</abilityClass>
+		<castSound>VPE_Merchant_Mammonite_mt_axe_stomp_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.08</psyfocusCost>
+				<entropyGain>8</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_CrazyUproarSTNL</li>
+				</prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+				<effecterDef>VPE_Ragna_Merchant_Mammonite_STNL</effecterDef>
+				<!-- <onCaster>true</onCaster> -->
+				<!-- <maintainForDuration>true</maintainForDuration> -->
+				<maintainForTicks>1</maintainForTicks>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Merchant_CartRevolutionSTNL</defName>
+		<label>Cart Revolution</label>
+		<description>Dumps the carried cart on the target creature, inflicting damage depending on the total mass of items carried by the caster divided by 2 to creatures standing nearby, will additionally push back creatures within the area of effect.\n\nThis action will destroy the current cart.</description>
+		<iconPath>UI_RagnarokSTNL/Abilities/Merchant/Cart_Revolution_scaled_5x_pngcrushed</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<range>999999</range>
+		<distanceToTarget>3</distanceToTarget>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<abilityClass>VPE_Ragnarok.Ability_CartRevolution</abilityClass>
+		<castSound>VPE_Merchant_Cart_Revolution_g카트토네이도_CastSTNL</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_RagnarokMerchantSTNL</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.08</psyfocusCost>
+				<entropyGain>8</entropyGain>
+				<prerequisites>
+					<li>VPE_Merchant_CrazyUproarSTNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>

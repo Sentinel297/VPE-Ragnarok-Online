@@ -1,0 +1,128 @@
+<Defs>
+<!-- <FleckDef ParentName="FleckBase_Thrown"> -->
+	<!-- <defName>VPE_Ragna_Swordsman_STNL</defName> -->
+	<!-- <graphicData> -->
+		<!-- <texPath>UI_RagnarokSTNL/Flecks/Swordsman/</texPath> -->
+		<!-- <renderInstanced>true</renderInstanced> -->
+		<!-- <color>(255, 255, 255, 255)</color> -->
+		<!-- <drawSize>(1, 1)</drawSize> -->
+	<!-- </graphicData> -->
+	<!-- <altitudeLayer>Darkness</altitudeLayer> -->
+	<!-- <fadeInTime>0.50</fadeInTime> -->
+	<!-- <solidTime>0</solidTime> -->
+	<!-- <fadeOutTime>0.5</fadeOutTime> -->
+	<!-- <growthRate>1.5</growthRate> -->
+<!-- </FleckDef> -->
+
+<!-- <EffecterDef> -->
+	<!-- <defName>VPE_Ragna_Swordsman_STNL</defName> -->
+	<!-- <children> -->
+		<!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass> -->
+			<!-- <fleckDef>VPE_Ragna_Swordsman_STNL</fleckDef> -->
+			<!-- <positionRadius>0</positionRadius> -->
+			<!-- <ticksBetweenMotes>0</ticksBetweenMotes> -->
+			<!-- <positionOffset>(0, 0, 0)</positionOffset> -->
+			<!-- <scale>1</scale> -->
+			<!-- <spawnLocType>OnSource</spawnLocType> -->
+			<!-- <absoluteAngle>false</absoluteAngle> -->
+			<!-- <rotation>0</rotation> -->
+			<!-- <angle>0~0</angle> -->
+			<!-- <speed>0</speed> -->
+		<!-- </li> -->
+	<!-- </children> -->
+<!-- </EffecterDef> -->
+
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Swordsman_Endure_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Swordsman/Endure</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(3, 4)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0.50</fadeInTime>
+	<solidTime>0</solidTime>
+	<fadeOutTime>0.5</fadeOutTime>
+	<growthRate>-0.5</growthRate>
+</FleckDef>
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Swordsman_Magnum_Breack_ALT_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Swordsman/Magnum_Breack_ALT</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0.50</fadeInTime>
+	<solidTime>0</solidTime>
+	<fadeOutTime>0.5</fadeOutTime>
+	<growthRate>1</growthRate>
+</FleckDef>
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Swordsman_Provoke_ALT_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Swordsman/Provoke_ALT</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0.25</fadeInTime>
+	<solidTime>0</solidTime>
+	<fadeOutTime>0.25</fadeOutTime>
+	<growthRate>1</growthRate>
+</FleckDef>
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Swordsman_Provoke_ALT_Reversed_STNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Swordsman/Provoke_ALTReversed</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>1</fadeInTime>
+	<solidTime>0</solidTime>
+	<fadeOutTime>0.25</fadeOutTime>
+	<growthRate>1</growthRate>
+</FleckDef>
+
+<EffecterDef>
+	<defName>VPE_Ragna_Swordsman_Provoke_ALT_STNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<fleckDef>VPE_Ragna_Swordsman_Provoke_ALT_STNL</fleckDef>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>9999</ticksBetweenMotes>
+			<positionOffset>(0, 0, 0.8)</positionOffset>
+			<scale>2</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>false</absoluteAngle>
+			<rotation>0</rotation>
+			<angle>0~0</angle>
+			<speed>0</speed>
+		</li>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<fleckDef>VPE_Ragna_Swordsman_Provoke_ALT_Reversed_STNL</fleckDef>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>60</ticksBetweenMotes>
+			<positionOffset>(0, 0, 0.8)</positionOffset>
+			<scale>2</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>false</absoluteAngle>
+			<rotation>0</rotation>
+			<angle>0~0</angle>
+			<speed>0</speed>
+		</li>
+	</children>
+</EffecterDef>
+</Defs>

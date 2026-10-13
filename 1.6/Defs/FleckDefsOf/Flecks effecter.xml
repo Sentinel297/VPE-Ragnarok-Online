@@ -1,0 +1,175 @@
+<Defs>
+
+<ThingDef ParentName="SkyfallerBase">
+    <defName>VPE_Ragna_FireballIncomingSTNL</defName>
+    <label>Fire bolt</label>
+    <graphicData>
+      <texPath>UI_RagnarokSTNL/Flecks/Magician/SkyfallerFlameBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <!-- <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow> -->
+      <!-- <shadowSize>(2, 2)</shadowSize> -->
+      <ticksToImpactRange>30~60</ticksToImpactRange>
+      <!-- <anticipationSound>WarpedObelisk_Fall</anticipationSound> -->
+      <!-- <anticipationSoundTicks>780</anticipationSoundTicks> -->
+      <impactSound>Explosion_Flame</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+	  <explosionDamageFactor>1</explosionDamageFactor>
+      <explosionRadius>1</explosionRadius>
+      <explosionDamage>Flame</explosionDamage>
+    </skyfaller>
+  </ThingDef>
+  
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>VPE_Ragna_ColdBoltIncomingSTNL</defName>
+    <label>Cold bolt</label>
+    <graphicData>
+      <texPath>UI_RagnarokSTNL/Flecks/Magician/icearrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <!-- <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow> -->
+      <!-- <shadowSize>(2, 2)</shadowSize> -->
+      <ticksToImpactRange>30~60</ticksToImpactRange>
+      <!-- <anticipationSound>WarpedObelisk_Fall</anticipationSound> -->
+      <!-- <anticipationSoundTicks>780</anticipationSoundTicks> -->
+      <impactSound>Explosion_Bomb</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+	  <explosionDamageFactor>1.5</explosionDamageFactor>
+      <explosionRadius>1</explosionRadius>
+      <explosionDamage>VPE_ColdBoltSNTL</explosionDamage>
+    </skyfaller>
+  </ThingDef>
+  
+    <DamageDef>
+    <defName>VPE_ColdBoltSNTL</defName>
+    <label>Cold Bolt</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.5</corpseDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(0.8, 0.8, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.5, 0.5, 0.8)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VPE_Ragna_Magician_FirewallSTNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/Apparition</texPath>
+		<shaderType>MoteGlow</shaderType>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 127, 0, 25)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>MoteLow</altitudeLayer>
+	<fadeInTime>0.50</fadeInTime>
+	<solidTime>2.5</solidTime>
+	<fadeOutTime>3.2</fadeOutTime>
+	<growthRate>0.005</growthRate>
+  </FleckDef>
+  
+    <EffecterDef>
+    <defName>VPE_Magician_FirewallSTNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<fleckDef>VPE_Ragna_Magician_FirewallSTNL</fleckDef>
+			<positionRadiusMin>0</positionRadiusMin>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>0</ticksBetweenMotes>
+			<positionOffset>(0, 0, -0.3)</positionOffset>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>true</absoluteAngle>
+			<scale>1.5</scale>
+			<angle>0~0</angle>
+			<speed>0.2~0.35</speed>
+		</li>
+	</children>
+  </EffecterDef>
+  
+  <!-- Safety Wall -->
+  
+  
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Magician_SafetywallTwoSTNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/Apparition</texPath>
+		<shaderType>MoteGlow</shaderType>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 25)</color>
+		<drawSize>(1, 1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<fadeInTime>0.50</fadeInTime>
+	<solidTime>2.5</solidTime>
+	<fadeOutTime>3.2</fadeOutTime>
+	<growthRate>0.005</growthRate>
+</FleckDef>
+  
+  
+<EffecterDef>
+	<defName>VPE_Magician_SafetywallSTNL</defName>
+	<children>
+		<li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<fleckDef>VPE_Ragna_Magician_SafetywallTwoSTNL</fleckDef>
+			<positionRadiusMin>0</positionRadiusMin>
+			<positionRadius>0</positionRadius>
+			<ticksBetweenMotes>0</ticksBetweenMotes>
+			<positionOffset>(0, 0, -0.3)</positionOffset>
+			<spawnLocType>OnSource</spawnLocType>
+			<absoluteAngle>true</absoluteAngle>
+			<scale>1.5</scale>
+			<angle>0~0</angle>
+			<speed>0.2~0.35</speed>
+		</li>
+	</children>
+</EffecterDef>
+
+<!-- Abilities -->
+
+
+<FleckDef ParentName="FleckBase_Thrown">
+	<defName>VPE_Ragna_Magician_FrostDiverSTNL</defName>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/Flecks/Magician/Frost_Driver</texPath>
+		<renderInstanced>true</renderInstanced>
+		<color>(255, 255, 255, 255)</color>
+		<drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<altitudeLayer>Darkness</altitudeLayer>
+	<fadeInTime>0</fadeInTime>
+	<solidTime>0.5</solidTime>
+	<fadeOutTime>0</fadeOutTime>
+	<growthRate>0</growthRate>
+</FleckDef>
+
+</Defs>

@@ -1,0 +1,78 @@
+<Defs>
+<SoundDef>
+	<defName>VPE_Merchant_Mammonite_mt_axe_stomp_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Merchant/Mammonite_mt_axe_stomp</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef><SoundDef>
+	<defName>VPE_Merchant_Crazy_Uproar_고성방가_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Merchant/Crazy_Uproar_고성방가</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef><SoundDef>
+	<defName>VPE_Merchant_Cart_Revolution_g카트토네이도_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Merchant/Cart_Revolution_g카트토네이도</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef><SoundDef>
+	<defName>VPE_Merchant_ALT_Weapon_Repair_bs_refinesuccess_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Merchant/ALT_Weapon_Repair_bs_refinesuccess</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef><SoundDef>
+	<defName>VPE_Merchant_Cart_Decoration_rl_b_trap_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Merchant/Cart_Decoration_rl_b_trap</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+</Defs>

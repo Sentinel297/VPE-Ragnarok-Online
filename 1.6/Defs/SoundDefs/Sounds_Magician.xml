@@ -1,0 +1,207 @@
+<Defs>
+<!-- <SoundDef> -->
+	<!-- <defName>VPE_Magician__CastSTNL</defName> -->
+	<!-- <context>MapOnly</context> -->
+	<!-- <maxSimultaneous>1</maxSimultaneous> -->
+	<!-- <subSounds> -->
+		<!-- <li> -->
+			<!-- <grains> -->
+				<!-- <li Class="AudioGrain_Clip"> -->
+					<!-- <clipPath>VPE_RagnarokSTNL/Magician/</clipPath> -->
+				<!-- </li> -->
+			<!-- </grains> -->
+			<!-- <volumeRange>42</volumeRange> -->
+			<!-- <distRange>20~50</distRange> -->
+		<!-- </li> -->
+	<!-- </subSounds> -->
+<!-- </SoundDef> -->
+
+<SoundDef>
+	<defName>VPE_Magician_Cold_Bolt_ef_icearrow_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>10</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Cold_Bolt_ef_icearrow</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<pitchRange>0.90~1.2</pitchRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+	
+	<SoundDef>
+	<defName>VPE_Magician_Energy_Coat_sage_magicrod_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Energy_Coat_sage_magicrod</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Fire_Ball_ef_fireball_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Fire_Ball_ef_fireball</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Fire_Bolt_ef_firearrow_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>10</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Fire_Bolt_ef_firearrow</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<pitchRange>0.90~1.2</pitchRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Fire_Wall_ef_firewall_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Fire_Wall_ef_firewall</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Frost_Diver_ef_frostdiver2_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Frost_Diver_ef_frostdiver2</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Napalm_Beat_ef_napalmbeat_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Napalm_Beat_ef_napalmbeat</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Safety_Wall_ef_glasswall_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Safety_Wall_ef_glasswall</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Sight_ef_sight_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Sight_ef_sight</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Stone_Curse_ef_stonecurse_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Stone_Curse_ef_stonecurse</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+	<defName>VPE_Magician_Thunderstorm_ef_thunderstorm_CastSTNL</defName>
+	<context>MapOnly</context>
+	<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>VPE_RagnarokSTNL/Magician/Thunderstorm_ef_thunderstorm</clipPath>
+				</li>
+			</grains>
+			<volumeRange>42</volumeRange>
+			<distRange>20~50</distRange>
+		</li>
+	</subSounds>
+</SoundDef>
+</Defs>

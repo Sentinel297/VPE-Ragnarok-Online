@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Level 1 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_SignumCrucisSTNL</defName>
+	<label>Signum Crucis</label>
+	<description>Decreases the armor rating of all entities on the map, has a 63% chance to succeed.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Signum_Crucis_scaled_5x_pngcrushed</iconPath>
+	<castTime>15</castTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_SignumCrucis</abilityClass>
+	<castSound>VPE_Acolyte_Signum_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>1</level>
+			<order>1</order>
+			<psyfocusCost>0.13</psyfocusCost>
+			<entropyGain>70</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_DivineProtectionSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_HealSTNL</defName>
+	<label>Heal</label>
+	<description>Halve the severity of the target's wounds and reduce them by another 1 severity.\n\nTargeting entities with this ability will deal 15 flame damage to them instead.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Heal_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Heal</abilityClass>
+	<castSound>VPE_Acolyte_Heal_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>1</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>40</entropyGain>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Ragna_Acolyte_HealSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>90</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_AquaBenedictaSTNL</defName>
+	<label>Aqua Benedicta</label>
+	<description>Draws water around the caster and manipulate it to cure the caster's addiction, this ability requires standing on water to function.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Aqua_Benedicta_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_HolyWater</abilityClass>
+	<castSound>VPE_Acolyte_Aqua_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>1</level>
+			<order>2</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>40</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_CureSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 2 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_DivineProtectionSTNL</defName>
+	<label>Passive: Divine Protection</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nReduce the offensive capabilities of nearby entities around the caster.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Divine_Protection_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetItems>true</canTargetItems>
+		<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+	</targetingParameters>
+	<chance>0</chance>
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>2</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>20</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_HealSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Acolyte_DivineProtectionCasterSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_IncreaseAgiSTNL</defName>
+	<label>Increase Agility</label>
+	<description>Places a temporary buff on the target that increases ATK SPD and movement speed.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Increase_AGI_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<durationTime>14400</durationTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_IncreaseAgi</abilityClass>
+	<castSound>VPE_Acolyte_IncreaseAgi_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.07</psyfocusCost>
+			<entropyGain>45</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_HealSTNL</li>
+			</prerequisites>
+		</li>
+<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+	<effecterDef>VPE_Ragna_Acolyte_AgiUpSTNL</effecterDef>
+	<!-- <onCaster>true</onCaster> -->
+	<!-- <maintainForDuration>true</maintainForDuration> -->
+	<maintainForTicks>5</maintainForTicks>
+</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_CureSTNL</defName>
+	<label>Cure</label>
+	<description>Cures a single target from their illness.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Cure_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>15.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Cure</abilityClass>
+	<castSound>VPE_Acolyte_Cure_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.07</psyfocusCost>
+			<entropyGain>15</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_HealSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 3 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_DemonBaneSTNL</defName>
+	<label>Passive: Demon Bane</label>
+	<description>Passive Skill: Unlocking this ability will automatically apply its effect.\n\nThis person will receive a buff that will allow them to deal a second instance of physical damage to entities.\n\nThe amount of damage dealt by this instance is tied to the damage inflicted by the initial hit.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Demon_Bane_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<targetMode>Self</targetMode>
+	<chance>0</chance>
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_PassiveHediffRagna</abilityClass>
+	<castSound>PsycastPsychicPulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>3</level>
+			<order>1</order>
+			<psyfocusCost>0.08</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_DivineProtectionSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VPE_Ragnarok.AbilityPassiveModExt">
+			<hediffForPassive>VPE_Ragnarok_Acolyte_DemonBaneSTNL</hediffForPassive>
+			<checkInterval>2500</checkInterval>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_DecreaseAgiSTNL</defName>
+	<label>Decrease Agility</label>
+	<description>Attempts to place a temporary dbuff on the target that decreases movement speed. 80% success chance.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Decrease_AGI_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<durationTime>7200</durationTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_DecreaseAGI</abilityClass>
+	<castSound>VPE_Acolyte_DecreaseAgi_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>3</level>
+			<order>2</order>
+			<psyfocusCost>0.07</psyfocusCost>
+			<entropyGain>33</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_IncreaseAgiSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Ragna_Acolyte_AgiDownSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_BlessingSTNL</defName>
+	<label>Blessing</label>
+	<description>Places a temporary buff on a single target that increases, attack strength, attack speed, and reduce psyfocus consumption for 240 sec.\n\nEntities will have the aforementioned stats reduced for the duration of this condition.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Blessing_scaled_5x_pngcrushed</iconPath>
+	<durationTime>14400</durationTime>
+	<castTime>60</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Blessing</abilityClass>
+	<castSound>VPE_Acolyte_Blessing_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>3</level>
+			<order>3</order>
+			<psyfocusCost>0.08</psyfocusCost>
+			<entropyGain>64</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_IncreaseAgiSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_BlessingSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 4 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_RuwachSTNL</defName>
+	<label>Ruwach</label>
+	<description>A flame of holy fire will orbit around the to reveal and damage invisible creatures within the area of effect.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Ruwach_scaled_5x_pngcrushed</iconPath>
+	<castTime>60</castTime>
+	<durationTime>600</durationTime>
+	<targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>7</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<castSound>VPE_Acolyte_Ruwach_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.07</psyfocusCost>
+			<entropyGain>10</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_DemonBaneSTNL</li>
+			</prerequisites>
+		</li>
+				<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_Ragnarok_Acolyte_RuwachSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_WarpPortalSTNL</defName>
+	<label>Warp Portal</label>
+	<description>Teleport everyone standing near the caster to a world tile of your choosing, the teleportation will cause everyone to reappear near an ally within the target map if the latter is occupied.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Warp_Portal_scaled_5x_pngcrushed</iconPath>
+	<abilityClass>VPE_Ragnarok.Ability_WarpPortal</abilityClass>
+	<castSound>VPE_Acolyte_Portal_CastSTNL</castSound>
+	<radius>1.9</radius>
+	<castTime>60</castTime>
+	<targetMode>Tile</targetMode>
+	<range>9999</range>
+	<worldTargeting>true</worldTargeting>
+	<needsTicking>true</needsTicking>
+	<chance>0</chance>
+	<showGizmoOnWorldView>true</showGizmoOnWorldView>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.3</psyfocusCost>
+			<entropyGain>0</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_TeleportSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_AngelusSTNL</defName>
+	<label>Angelus</label>
+	<description>Envelops nearby allies with a protective field that will reduce all incoming damage.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Angelus_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<durationTime>18000</durationTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>13.9</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Angelus</abilityClass>
+	<castSound>VPE_Acolyte_Angelus_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>4</level>
+			<order>3</order>
+			<psyfocusCost>0.20</psyfocusCost>
+			<entropyGain>50</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_BlessingSTNL</li>
+			</prerequisites>
+		</li>
+				<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_AngelusSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<!-- Level 5 -->
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_TeleportSTNL</defName>
+	<label>Teleport</label>
+	<description>Warps the user to a random unfogged and standable cell within their map.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Teleport_scaled_5x_pngcrushed</iconPath>
+	<castTime>15</castTime>
+	<durationTime>600</durationTime>
+	<targetMode>Self</targetMode>
+	<!-- <chance>0</chance> -->
+	<range>0</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Teleport</abilityClass>
+	<castSound>VPE_Acolyte_Teleport_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>5</level>
+			<order>1</order>
+			<psyfocusCost>0.05</psyfocusCost>
+			<entropyGain>9</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_RuwachSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_PneumaSTNL</defName>
+	<label>Pneuma</label>
+	<description>Creates a green cloud at the target location that will block projectiles from harming allies that standing nearby.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Pneuma_scaled_5x_pngcrushed</iconPath>
+	<castTime>15</castTime>
+	<durationTime>600</durationTime>
+	<targetMode>Location</targetMode>
+		<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>9</range>
+	<radius>1.5</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_Pneuma</abilityClass>
+	<castSound>VPE_Acolyte_Pneuma_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>5</level>
+			<order>2</order>
+			<psyfocusCost>0.15</psyfocusCost>
+			<entropyGain>40</entropyGain>
+			<prerequisites>
+			<li>VPE_Acolyte_WarpPortalSTNL</li>
+			</prerequisites>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+<ThingDef>
+	<defName>VPE_Ragnarok_Acolyte_PneumaSTNL</defName>
+	<label>Pneuma</label>
+	<thingClass>VPE_Ragnarok.Pneuma</thingClass>
+	<category>Gas</category>
+	<altitudeLayer>Gas</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>UI_RagnarokSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		<drawSize>1.5</drawSize>
+		<color>(1, 1, 1, 1)</color>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_DestroyAfterDelay">
+			<delayTicks>600</delayTicks>
+		</li>
+		<li Class="CompProperties_Effecter">
+			<effecterDef>VPE_Acolyte_PneumaSTNL</effecterDef>
+		</li>
+	</comps>
+</ThingDef>
+
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_Acolyte_HolyLightSTNL</defName>
+	<label>Holy Light</label>
+	<description>Inflicts 30 points of flame damage to a single target.</description>
+	<iconPath>UI_RagnarokSTNL/Abilities/Acolyte/Holy_Light_scaled_5x_pngcrushed</iconPath>
+	<castTime>30</castTime>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<!-- <chance>0</chance> -->
+	<range>14.9</range>
+	<radius>0</radius>
+	<needsTicking>true</needsTicking>
+	<goodwillImpact>0</goodwillImpact>
+	<abilityClass>VPE_Ragnarok.Ability_HolyLight</abilityClass>
+	<castSound>VPE_Acolyte_HolyLight_CastSTNL</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_RagnarokAcolyteSTNL</path>
+			<level>5</level>
+			<order>3</order>
+			<psyfocusCost>0.20</psyfocusCost>
+			<entropyGain>50</entropyGain>
+			<prerequisites>
+				<li>VPE_Acolyte_AngelusSTNL</li>
+			</prerequisites>
+		</li>
+				<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Acolyte_HolyLightSTNL</effecterDef>
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<maintainForTicks>5</maintainForTicks>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
+
+</Defs>

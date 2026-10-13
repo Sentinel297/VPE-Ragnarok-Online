@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Swordsman -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokSwordsmanSTNL</defName>
+	<label>Swordsman</label>
+	<description>The Swordsman is the warrior, the archetype of the primal impulse, the front line that acts first and asks later.\n\nThey are willpower embodied in steel, unafraid to bleed if it means paving the way for others.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Swordman</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Swordman</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Swordsman is the warrior, the archetype of the primal impulse, the front line that acts first and asks later.\n\nThey are willpower embodied in steel, unafraid to bleed if it means paving the way for others.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<!-- Magician -->
+	
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokMagicianSTNL</defName>
+	<label>Mage</label>
+	<description>The Mage is the reflection of a life devoted to study, the echo of elemental forces that refuse to be contained.\n\nThey walk with the arrogance of one who knows secrets that could split mountains, yet with the same fragility as the pages of the books they studied.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Mage</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Mage</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Mage is the reflection of a life devoted to study, the echo of elemental forces that refuse to be contained.\n\nThey walk with the arrogance of one who knows secrets that could split mountains, yet with the same fragility as the pages of the books they studied.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<!-- Acolyte -->
+	
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokAcolyteSTNL</defName>
+	<label>Acolyte</label>
+	<description>The Acolyte is not merely a support, but the whisper of the divine amidst chaos.\n\nThey walk between light and shadow, not as warriors or sages, but as conduits. Their power stems not from muscle or steel, but from faith, a faith that heals, blesses, and exorcises.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Acolyte</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Acolyte</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Acolyte is not merely a support, but the whisper of the divine amidst chaos.\n\nThey walk between light and shadow, not as warriors or sages, but as conduits. Their power stems not from muscle or steel, but from faith, a faith that heals, blesses, and exorcises.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Merchant -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokMerchantSTNL</defName>
+	<label>Merchant</label>
+	<description>The Merchant is a walking paradox, a trader who ventures into battlefields, a money strategist who carries a cart as if it were their banner.\n\nThey don't fight for glory or justice, they fight for profitability.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Merchant</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Merchant</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Merchant is a walking paradox, a trader who ventures into battlefields, a money strategist who carries a cart as if it were their banner.\n\nThey don't fight for glory or justice, they fight for profitability.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Thief -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokThiefSTNL</defName>
+	<label>Thief</label>
+	<description>The Thief is the shadow that laughs while the world is distracted. Not merely a robber, they are the art of evasion made flesh, the unseen edge, the whisper that precedes the poison.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Thief</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Thief</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Thief is the shadow that laughs while the world is distracted. Not merely a robber, they are the art of evasion made flesh, the unseen edge, the whisper that precedes the poison.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Archer -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_RagnarokArcherSTNL</defName>
+	<label>Archer</label>
+	<description>The Archer watches the battle from afar, calculates the wind, the enemy's rhythm, and lets their shot speak for them.\n\nThey are the all-seeing eye, the steady hand, the silence before the impact.</description>
+	<background>UI_RagnarokSTNL/Tree/B_Archer</background>
+	<altBackground>UI_RagnarokSTNL/Tree/ALT_Archer</altBackground>
+	<tab>RO</tab>
+	<tooltip>The Archer watches the battle from afar, calculates the wind, the enemy's rhythm, and lets their shot speak for them.\n\nThey are the all-seeing eye, the steady hand, the silence before the impact.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>
